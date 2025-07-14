@@ -76,7 +76,7 @@ const defaultProjects: Project[] = [
     image:
       "https://res.cloudinary.com/djraxo05u/image/upload/v1752008111/daf_intern_image_bzc3sf.jpg",
     tags: ["Azure DevOps", ".Net Framework", "Power Bi"],
-    caseStudyUrl: "/Daf_Internship_Product_System_Design_Document.pdf",
+    caseStudyUrl: "https://paraskhosla.github.io/Portfolio_website/Daf_Internship_Product_System_Design_Document.pdf",
     demoUrl: "https://paraskhosla.github.io/Portfolio_website/Daf_Dashboard_Demo.pdf",
   },
   {
@@ -87,8 +87,8 @@ const defaultProjects: Project[] = [
     image:
       "https://res.cloudinary.com/djraxo05u/image/upload/v1752007180/philips_tcdcum.jpg",
     tags: ["LIS2DH12", "Python", "Deep Learning"],
-    caseStudyUrl: "/Versuni_Internship_Research_Report_signed.pdf",
-    demoUrl: "/versuni-presentation.pdf",
+    caseStudyUrl: "https://paraskhosla.github.io/Portfolio_website/Versuni_Internship_Research_Report_signed.pdf",
+    demoUrl: "https://paraskhosla.github.io/Portfolio_website/versuni-presentation.pdf",
   },
   {
     id: "3",
@@ -98,7 +98,7 @@ const defaultProjects: Project[] = [
     image:
       "https://res.cloudinary.com/djraxo05u/image/upload/v1752007829/colordetect_celjua.jpg",
     tags: ["Jetson TX2", "Python", "OpenCV"],
-    caseStudyUrl: "/Color_Change_detection.pdf",
+    caseStudyUrl: "https://paraskhosla.github.io/Portfolio_website/Color_Change_detection.pdf",
     demoUrl: "https://youtu.be/j5ihSZjRxy4",
   },
   {
@@ -122,7 +122,7 @@ const defaultProjects: Project[] = [
     image:
       "https://res.cloudinary.com/djraxo05u/image/upload/v1752007285/Screenshot_4_jcdyia.png",
     tags: ["C/C++", "PWM", "4-Motor Drive"],
-    caseStudyUrl: "/Smart_car_using_BL.pdf",
+    caseStudyUrl: "https://paraskhosla.github.io/Portfolio_website/Smart_car_using_BL.pdf",
     demoUrl: "https://youtu.be/9DCF5yQoPSY",
   },
   {
@@ -133,8 +133,8 @@ const defaultProjects: Project[] = [
     image:
       "https://res.cloudinary.com/djraxo05u/image/upload/v1752007183/thingy91_qfqhif.png",
     tags: ["GNSS", "IOT", "VS Code"],
-    caseStudyUrl: "/thingy91-report.pdf",
-    demoUrl: "#",
+    caseStudyUrl: "https://paraskhosla.github.io/Portfolio_website/thingy91-report.pdf",
+    demoUrl: "https://paraskhosla.github.io/Portfolio_website/thingy91-report.pdf",
   },
 ];
 
