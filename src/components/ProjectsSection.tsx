@@ -77,7 +77,7 @@ const defaultProjects: Project[] = [
       "https://res.cloudinary.com/djraxo05u/image/upload/v1752008111/daf_intern_image_bzc3sf.jpg",
     tags: ["Azure DevOps", ".Net Framework", "Power Bi"],
     caseStudyUrl: "/Daf_Internship_Product_System_Design_Document.pdf",
-    demoUrl: "/Daf_Dashboard_Demo.pdf",
+    demoUrl: "https://paraskhosla.github.io/Portfolio_website/Daf_Dashboard_Demo.pdf",
   },
   {
     id: "2",
