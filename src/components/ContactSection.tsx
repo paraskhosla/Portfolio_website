@@ -128,8 +128,7 @@ const ContactSection = ({
             Get In Touch
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base px-4">
-            Let's create something innovative. I'm available for fulltime
-            projects and collaborations.
+            Looking for my next full-time role. Get in touch if you're hiring.
           </p>
         </div>
 
