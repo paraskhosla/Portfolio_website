@@ -57,7 +57,7 @@ const HomePage = () => {
             <p className="text-gray-700 mb-6 sm:mb-8 text-sm sm:text-base leading-relaxed">
               With experience in software development and embedded systems, I
               build solutions that are both efficient and impactful. I
-              specialize in Full-stack, cloud integration, and dashboards. 
+              specialize in Full-stack development, cloud integration, and dashboards. 
               From internships to personal projects, I turn complex
               ideas into working systems.
             </p>
