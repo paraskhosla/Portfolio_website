@@ -57,7 +57,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-14 sm:h-16">
           {/* Logo/Name */}
           <div
-            className="text-2xl sm:text-3xl font-logo text-gray-700 cursor-pointer hover:text-gray-700 transition-colors"
+            className="text-2xl sm:text-3xl font-logo text-gray-700 cursor-pointer hover:text-gray-900 transition-colors"
             onClick={() => scrollToSection("hero")}
           >
             Paras Khosla
