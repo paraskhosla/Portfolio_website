@@ -38,7 +38,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({
           <div className="w-16 sm:w-20 h-1 bg-primary mx-auto mb-4 sm:mb-6"></div>
           <p className="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base px-4">
             A selection of my recent technical projects across embedded systems,
-            software integration, and intelligent applications.
+            cloud integration, and intelligent applications.
           </p>
         </motion.div>
 
@@ -134,7 +134,7 @@ const defaultProjects: Project[] = [
       "https://res.cloudinary.com/djraxo05u/image/upload/v1752007183/thingy91_qfqhif.png",
     tags: ["GNSS", "IOT", "VS Code"],
     caseStudyUrl: "https://paraskhosla.github.io/Portfolio_website/thingy91-report.pdf",
-    demoUrl: "https://paraskhosla.github.io/Portfolio_website/thingy91-report.pdf",
+    demoUrl: "https://github.com/paraskhosla/Thingy91-code/tree/main/src",
   },
 ];
 

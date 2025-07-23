@@ -57,8 +57,8 @@ const HomePage = () => {
             <p className="text-gray-700 mb-6 sm:mb-8 text-sm sm:text-base leading-relaxed">
               With experience in software development and embedded systems, I
               build solutions that are both efficient and impactful. I
-              specialize in backend automation, dashboards, and device
-              integration. From internships to personal projects, I turn complex
+              specialize in Full-stack, cloud integration, and dashboards. 
+              From internships to personal projects, I turn complex
               ideas into working systems.
             </p>
             {/* Skills grid */}
@@ -143,11 +143,11 @@ const HomePage = () => {
                   Embedded C/C++
                 </span>
                 <span className="text-sm sm:text-base font-semibold bg-blue-100 px-2 py-1 rounded-full group-hover:bg-blue-200 transition-colors duration-300">
-                  85%
+                  75%
                 </span>
               </div>
               <Progress
-                value={85}
+                value={75}
                 className="h-3 group-hover:h-4 transition-all duration-300"
               />
             </div>
@@ -155,7 +155,7 @@ const HomePage = () => {
             <div className="group space-y-2 p-4 rounded-xl bg-white/70 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:bg-white/90 hover:scale-[1.02]">
               <div className="flex justify-between items-center">
                 <span className="font-medium text-sm sm:text-base group-hover:text-green-600 transition-colors duration-300">
-                  Python &amp; Scripting
+                Azure (Functions, Storage, AppIn)
                 </span>
                 <span className="text-sm sm:text-base font-semibold bg-green-100 px-2 py-1 rounded-full group-hover:bg-green-200 transition-colors duration-300">
                   80%
@@ -170,7 +170,7 @@ const HomePage = () => {
             <div className="group space-y-2 p-4 rounded-xl bg-white/70 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:bg-white/90 hover:scale-[1.02]">
               <div className="flex justify-between items-center">
                 <span className="font-medium text-sm sm:text-base group-hover:text-purple-600 transition-colors duration-300">
-                  Azure (Functions, Storage, AI)
+                Python &amp; Scripting
                 </span>
                 <span className="text-sm sm:text-base font-semibold bg-purple-100 px-2 py-1 rounded-full group-hover:bg-purple-200 transition-colors duration-300">
                   70%
@@ -265,31 +265,31 @@ const HomePage = () => {
                     <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
                     <span>
                       Built dashboards in SCOM and Power BI to monitor system
-                      health and KPIs
+                      health and project performance after new releases
                     </span>
                   </li>
                   <li className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors duration-200">
                     <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Automated API tests using Postman and Tosca</span>
+                    <span>Automated API tests using Tosca and Postman</span>
                   </li>
                   <li className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors duration-200">
                     <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
                     <span>
-                      Used Azure Functions to send system and certificate data
+                      Used Azure environment to send certificate data
                       to Application Insights
                     </span>
                   </li>
                   <li className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors duration-200">
                     <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
                     <span>
-                      Worked with engineers to define dashboard metrics and
-                      validate data
+                    Certificate expiration monitoring apps deployed on DAF servers
                     </span>
                   </li>
                   <li className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors duration-200">
                     <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
                     <span>
-                      Documented the VSS Insights project and testing process
+                    Worked closely with engineers to define dashboard metrics and
+                    validate data
                     </span>
                   </li>
                 </ul>
@@ -491,7 +491,7 @@ const HomePage = () => {
 
           <div className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-gray-500 text-xs sm:text-sm text-center sm:text-left">
-              © 2025 Paras Khosla. All rights reserved.
+              Copyright © 2025 Paras Khosla. All rights reserved.
             </p>
 
             <div className="flex gap-3 sm:gap-4">
