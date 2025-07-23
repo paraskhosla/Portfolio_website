@@ -44,13 +44,13 @@ const HomePage = () => {
             <div className="flex items-center gap-2 mb-2">
               <GraduationCap className="h-4 w-4 sm:h-5 sm:w-5 text-gray-600 flex-shrink-0" />
               <p className="text-gray-700 text-sm sm:text-base">
-                Information & Communication Technology
+                Information & Communication Technology(2025)
               </p>
             </div>
             <div className="flex items-center gap-2 mb-4 sm:mb-6">
               <GraduationCap className="h-4 w-4 sm:h-5 sm:w-5 text-gray-600 flex-shrink-0" />
               <p className="text-gray-700 text-sm sm:text-base">
-                Mechanical Engineering
+                Mechanical Engineering(2020)
               </p>
             </div>
 
@@ -140,14 +140,14 @@ const HomePage = () => {
             <div className="group space-y-2 p-4 rounded-xl bg-white/70 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:bg-white/90 hover:scale-[1.02]">
               <div className="flex justify-between items-center">
                 <span className="font-medium text-sm sm:text-base group-hover:text-blue-600 transition-colors duration-300">
-                  Embedded C/C++
+                  Embedded Software
                 </span>
                 <span className="text-sm sm:text-base font-semibold bg-blue-100 px-2 py-1 rounded-full group-hover:bg-blue-200 transition-colors duration-300">
-                  75%
+                  85%
                 </span>
               </div>
               <Progress
-                value={75}
+                value={85}
                 className="h-3 group-hover:h-4 transition-all duration-300"
               />
             </div>
@@ -218,11 +218,11 @@ const HomePage = () => {
                   Test Automation (Postman, Tosca)
                 </span>
                 <span className="text-sm sm:text-base font-semibold bg-teal-100 px-2 py-1 rounded-full group-hover:bg-teal-200 transition-colors duration-300">
-                  70%
+                  65%
                 </span>
               </div>
               <Progress
-                value={70}
+                value={65}
                 className="h-3 group-hover:h-4 transition-all duration-300"
               />
             </div>
