@@ -6,7 +6,14 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["hero", "about", "experience", "projects", "contact"];
+      const sections = [
+        "hero",
+        "about",
+        "experience",
+        "certifications",
+        "projects",
+        "contact",
+      ];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -47,6 +54,7 @@ const Navbar = () => {
   const navItems = [
     { id: "about", label: "About" },
     { id: "experience", label: "Experience" },
+    { id: "certifications", label: "Certifications" },
     { id: "projects", label: "Projects" },
     { id: "contact", label: "Contact" },
   ];

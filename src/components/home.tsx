@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import HeroSection from "./HeroSection";
 import ProjectsSection from "./ProjectsSection";
 import ContactSection from "./ContactSection";
+import CertificationsSection from "./CertificationsSection";
+import Chatbot from "./Chatbot";
 import { Progress } from "./ui/progress";
 import { Separator } from "./ui/separator";
-import { ArrowDown, ArrowUp, Briefcase, GraduationCap } from "lucide-react";
+import { ArrowUp, Briefcase, GraduationCap } from "lucide-react";
 
 const HomePage = () => {
+  const [showScrollToTop, setShowScrollToTop] = useState(false);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -18,6 +22,25 @@ const HomePage = () => {
       });
     }
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const contactSection = document.getElementById("contact");
+      if (contactSection) {
+        const contactTop = contactSection.offsetTop;
+        const scrollPosition = window.scrollY + window.innerHeight;
+        const contactBottom = contactTop + contactSection.offsetHeight;
+
+        // Show button when user is in the contact section
+        setShowScrollToTop(
+          scrollPosition >= contactTop && window.scrollY <= contactBottom,
+        );
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div className="min-h-screen bg-white">
@@ -57,16 +80,13 @@ const HomePage = () => {
             <p className="text-gray-700 mb-6 sm:mb-8 text-sm sm:text-base leading-relaxed">
               With experience in software development and embedded systems, I
               build solutions that are both efficient and impactful. I
-              specialize in Full-stack development, cloud integration, and dashboards. 
-              From internships to personal projects, I turn complex
+              specialize in Full-stack development, cloud integration, and
+              dashboards. From internships to personal projects, I turn complex
               ideas into working systems.
             </p>
             {/* Skills grid */}
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
-              <div
-                className="bg-gray-200 p-3 sm:p-4 rounded-lg text-center
-                  transition-colors duration-200 hover:bg-gray-300"
-              >
+              <div className="bg-gray-200 p-3 sm:p-4 rounded-lg text-center transition-colors duration-200 hover:bg-gray-300">
                 <h4 className="font-medium text-xs sm:text-sm">
                   Embedded Systems
                 </h4>
@@ -155,7 +175,7 @@ const HomePage = () => {
             <div className="group space-y-2 p-4 rounded-xl bg-white/70 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:bg-white/90 hover:scale-[1.02]">
               <div className="flex justify-between items-center">
                 <span className="font-medium text-sm sm:text-base group-hover:text-green-600 transition-colors duration-300">
-                Azure (Functions, Storage, AppIn)
+                  Azure (Functions, Storage, AppIn)
                 </span>
                 <span className="text-sm sm:text-base font-semibold bg-green-100 px-2 py-1 rounded-full group-hover:bg-green-200 transition-colors duration-300">
                   80%
@@ -170,7 +190,7 @@ const HomePage = () => {
             <div className="group space-y-2 p-4 rounded-xl bg-white/70 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:bg-white/90 hover:scale-[1.02]">
               <div className="flex justify-between items-center">
                 <span className="font-medium text-sm sm:text-base group-hover:text-purple-600 transition-colors duration-300">
-                Python &amp; Scripting
+                  Python &amp; Scripting
                 </span>
                 <span className="text-sm sm:text-base font-semibold bg-purple-100 px-2 py-1 rounded-full group-hover:bg-purple-200 transition-colors duration-300">
                   70%
@@ -270,27 +290,27 @@ const HomePage = () => {
                   </li>
                   <li className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors duration-200">
                     <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Used Azure environment to send certificate data
-                      to Application Insights
+                    <span>
+                      Used Azure environment to send certificate data to
+                      Application Insights
                     </span>
                   </li>
                   <li className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors duration-200">
                     <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
                     <span>
-                      Certificate expiration monitoring apps deployed on DAF servers
+                      Certificate expiration monitoring apps deployed on DAF
+                      servers
                     </span>
                   </li>
                   <li className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors duration-200">
                     <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <span>
-                    Automated API tests using Tosca and Postman
-                    </span>
+                    <span>Automated API tests using Tosca and Postman</span>
                   </li>
                   <li className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors duration-200">
                     <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
                     <span>
-                    Worked closely with engineers to define dashboard metrics and
-                    validate data
+                      Worked closely with engineers to define dashboard metrics
+                      and validate data
                     </span>
                   </li>
                 </ul>
@@ -429,6 +449,11 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* Certifications Section */}
+      <div id="certifications">
+        <CertificationsSection />
+      </div>
+
       {/* Projects Section */}
       <div id="projects">
         <ProjectsSection />
@@ -463,6 +488,12 @@ const HomePage = () => {
                   className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base cursor-pointer"
                 >
                   About
+                </button>
+                <button
+                  onClick={() => scrollToSection("certifications")}
+                  className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base cursor-pointer"
+                >
+                  Certifications
                 </button>
                 <button
                   onClick={() => scrollToSection("projects")}
@@ -567,28 +598,21 @@ const HomePage = () => {
         </div>
       </footer>
 
-      {/* Scroll buttons */}
-      <div className="fixed bottom-4 sm:bottom-6 md:bottom-8 right-4 sm:right-6 md:right-8 flex flex-col gap-2 z-40">
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="bg-gray-900 text-white p-2 sm:p-3 rounded-full shadow-lg hover:bg-gray-800 transition-colors"
-          aria-label="Scroll to top"
-        >
-          <ArrowUp className="h-4 w-4 sm:h-5 sm:w-5" />
-        </button>
-        <button
-          onClick={() =>
-            window.scrollTo({
-              top: document.body.scrollHeight,
-              behavior: "smooth",
-            })
-          }
-          className="bg-gray-900 text-white p-2 sm:p-3 rounded-full shadow-lg hover:bg-gray-800 transition-colors"
-          aria-label="Scroll to bottom"
-        >
-          <ArrowDown className="h-4 w-4 sm:h-5 sm:w-5" />
-        </button>
-      </div>
+      {/* Scroll to top button - only visible in contact section */}
+      {showScrollToTop && (
+        <div className="fixed bottom-4 sm:bottom-6 md:bottom-8 right-4 sm:right-6 md:right-8 z-40">
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="bg-gray-900 text-white p-2 sm:p-3 rounded-full shadow-lg hover:bg-gray-800 transition-all duration-300 transform hover:scale-110"
+            aria-label="Scroll to top"
+          >
+            <ArrowUp className="h-4 w-4 sm:h-5 sm:w-5" />
+          </button>
+        </div>
+      )}
+
+      {/* Chatbot */}
+      <Chatbot />
     </div>
   );
 };

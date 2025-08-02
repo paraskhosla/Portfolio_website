@@ -25,11 +25,14 @@ const HeroSection = ({
   };
   return (
     <section className="relative w-full h-screen min-h-[600px] sm:min-h-[700px] md:min-h-[800px] bg-background flex items-center justify-center overflow-hidden">
-      {/* Background image with overlay */}
+      {/* Background video with overlay */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1600&q=80"
-          alt="Design workspace"
+        <video
+          src="https://res.cloudinary.com/djraxo05u/video/upload/v1754088242/Home_xqlh4i.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/50"></div>

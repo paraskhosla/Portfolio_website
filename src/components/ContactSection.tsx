@@ -272,12 +272,15 @@ const ContactSection = ({
             )}
           </div>
 
-          {/* Contact Info & Image */}
+          {/* Contact Info & video */}
           <div className="flex flex-col space-y-6 sm:space-y-8 order-1 lg:order-2">
             <div className="relative rounded-xl overflow-hidden h-48 sm:h-64 md:h-80">
-              <img
-                src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80"
-                alt="Paras working on design"
+              <video
+                src="https://res.cloudinary.com/djraxo05u/video/upload/v1754008902/contact_zr9zct.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-black/20"></div>
