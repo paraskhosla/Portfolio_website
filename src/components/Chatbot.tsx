@@ -79,7 +79,7 @@ const Chatbot = ({ isOpen = false }: ChatbotProps) => {
       message.includes("introduction")
     ) {
       setTimeout(() => scrollToSection("about"), 1000);
-      return "Paras is an Embedded & Software Developer with experience in dashboard development, cloud integration, and embedded systems. He has worked at DAF Trucks and Versuni (formerly Philips). I'm scrolling to the About section for you!";
+      return "Paras is an Embedded & Software Developer with experience in dashboard development, cloud integration, and embedded systems. He has worked at DAF Trucks N.V. and Versuni (formerly Philips). I'm scrolling to the About section for you!";
     }
 
     if (
@@ -96,7 +96,7 @@ const Chatbot = ({ isOpen = false }: ChatbotProps) => {
       message.includes("technology") ||
       message.includes("tech")
     ) {
-      return "Paras specializes in:\n• Embedded Software (85%)\n• Azure (Functions, Storage, AppIn) (80%)\n• Python & Scripting (70%)\n• STM32 & Microcontrollers (75%)\n• Power BI / Dashboards (75%)\n• Test Automation (65%)\n\nHe also has experience with IoT & Sensors, Git & CI/CD, and Cloud & Monitoring.";
+      return "Paras specializes in:\n• Embedded Software \n• Azure DevOps(Functions, Storage, AppIn) \n• Python & Scripting \n• STM32 & Microcontrollers \n• Power BI / Grafana Dashboards \n• Test Automation in Tosca & Postman \n\nHe also has experience with IoT & Sensors, Git & CI/CD, and Cloud & Monitoring.";
     }
 
     if (
@@ -105,7 +105,7 @@ const Chatbot = ({ isOpen = false }: ChatbotProps) => {
       message.includes("work")
     ) {
       setTimeout(() => scrollToSection("projects"), 1000);
-      return "Paras has worked on various projects including embedded systems, dashboard development, and machine learning applications. I'm taking you to the Projects section to see his work!";
+      return "Paras has worked on various projects including embedded systems, Azure DevOps development, dashboard development, and machine learning applications. I'm taking you to the Projects section to see his work!";
     }
 
     if (message.includes("certification") || message.includes("certificate")) {
