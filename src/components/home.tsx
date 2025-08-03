@@ -235,7 +235,7 @@ const HomePage = () => {
             <div className="group space-y-2 p-4 rounded-xl bg-white/70 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:bg-white/90 hover:scale-[1.02]">
               <div className="flex justify-between items-center">
                 <span className="font-medium text-sm sm:text-base group-hover:text-teal-600 transition-colors duration-300">
-                  Test Automation (Postman, Tosca)
+                  Test Automation (Tosca, Postman)
                 </span>
                 <span className="text-sm sm:text-base font-semibold bg-teal-100 px-2 py-1 rounded-full group-hover:bg-teal-200 transition-colors duration-300">
                   65%
