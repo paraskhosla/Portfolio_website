@@ -161,6 +161,17 @@ const Chatbot = ({ isOpen = false }: ChatbotProps) => {
       return "Hello! I'm here to help you learn more about Paras Khosla. You can ask me about his experience, skills, projects, or how to contact him. What would you like to know?";
     }
 
+    if (
+      message.includes("bye") ||
+      message.includes("goodbye") ||
+      message.includes("see you") ||
+      message.includes("take care") ||
+      message.includes("later") ||
+      message.includes("good night")
+    ) {
+      return "Goodbye! Feel free to explore the site more, and reach out anytime if you have questions. 👋";
+    }
+
     if (message.includes("help") || message.includes("what can you do")) {
       return "I can help you with:\n• Learn about Paras's background and experience\n• Navigate to different sections (About, Experience, Projects, etc.)\n• Get his contact information\n• Learn about his skills and certifications\n\nJust ask me anything about Paras or the website!";
     }
