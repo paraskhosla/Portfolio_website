@@ -60,11 +60,10 @@ const HeroSection = ({
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", stiffness: 300 }}
-              className="w-full sm:w-auto"
             >
               <Button
                 size="lg"
-                className="bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 w-full sm:w-auto text-sm sm:text-base"
+                className="w-36 bg-primary hover:bg-primary/90 text-white text-sm sm:text-base"
                 onClick={() => scrollToSection("projects")}
               >
                 View My Work
@@ -75,12 +74,11 @@ const HeroSection = ({
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", stiffness: 300 }}
-              className="w-full sm:w-auto"
             >
               <Button
                 size="lg"
                 variant="outline"
-                className="border-gray-200 text-gray-800 hover:text-white hover:border-white hover:bg-white/10 transition-colors duration-200 px-8"
+                className="w-36 border-gray-200 text-gray-800 hover:text-white hover:border-white hover:bg-white/10 transition-colors duration-200 text-sm sm:text-base"
                 onClick={() => scrollToSection("contact")}
               >
                 Get In Touch
