@@ -131,6 +131,12 @@ const ProjectCard = ({
               className="w-full h-[calc(90vh-120px)] border-0 rounded-md bg-gray-100"
               title={currentPdfTitle}
               onLoad={() => setIsPdfLoading(false)}
+            // <iframe
+            //   src={`https://docs.google.com/viewer?embedded=true&url=${encodeURIComponent(currentPdfUrl)}`}
+            //   className="w-full h-[calc(90vh-120px)] border-0 rounded-md bg-gray-100"
+            //   title={currentPdfTitle}
+            //   onLoad={() => setIsPdfLoading(false)}
+            // />
             />
           </div>
         </DialogContent>
