@@ -175,6 +175,8 @@ const Chatbot = ({ isOpen = false }: ChatbotProps) => {
       message.includes("goodbye") ||
       message.includes("see you") ||
       message.includes("take care") ||
+      message.includes("doei") ||
+      message.includes("doi") ||
       message.includes("later") ||
       message.includes("good night")
     ) {
