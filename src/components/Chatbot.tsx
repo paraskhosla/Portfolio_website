@@ -105,7 +105,7 @@ const Chatbot = ({ isOpen = false }: ChatbotProps) => {
       message.includes("introduction")
     ) {
       setTimeout(() => scrollToSection("about"), 1000);
-      return "Paras is an Embedded & Software Developer with experience in dashboard development, cloud integration, and embedded systems. He has worked at DAF Trucks and Versuni (formerly Philips). I'm scrolling to the About section for you!";
+      return "Paras is an enthusiastic and curious problem-solver who thrives on tackling challenges from different domains. With a mix of technical expertise and creative thinking, he enjoys finding practical solutions that make a real impact. Once he commits to a goal, he follows through with determination and optimism. Outside of work, he loves cycling, traveling, exploring new cultures, and spending time on personal development projects that keep him learning and growing.";
     }
 
     if (
@@ -134,7 +134,10 @@ const Chatbot = ({ isOpen = false }: ChatbotProps) => {
       return "Paras has worked on various projects including embedded systems, dashboard development, and machine learning applications. I'm taking you to the Projects section to see his work!";
     }
 
-    if (message.includes("certification") || message.includes("certificate")) {
+    if (
+      message.includes("certification") || 
+      message.includes("certificate")
+    ) {
       setTimeout(() => scrollToSection("certifications"), 1000);
       return "Paras has certifications from Microsoft and Fontys University. Let me show you the Certifications section!";
     }
@@ -158,8 +161,22 @@ const Chatbot = ({ isOpen = false }: ChatbotProps) => {
       return "Paras has:\n• Information & Communication Technology(ICT) \n• Diploma in Mechanical Engineering \n\nHe brings together hands-on engineering experience with strong IT skills to build practical, tech-driven solutions.";
     }
 
-    if (message.includes("location") || message.includes("where")) {
+    if (
+      message.includes("location") || 
+      message.includes("where")
+    ) {
       return "Paras is based in Eindhoven, Netherlands. He's open to opportunities in the Netherlands";
+    }
+
+    if (
+      message.includes("education") ||
+      message.includes("study") ||
+      message.includes("degree") ||
+      message.includes("university") ||
+      message.includes("college")
+    ) {
+  setTimeout(() => scrollToSection("education"), 1000);
+  return "Paras studied both Information & Communication Technology(2025) at Fontys University of Applied Sciences and Mechanical Engineering(2020) at Govt. Polytechnic College. This combination of fields highlights his adaptability, ability to learn across disciplines, and enthusiasm for tackling new challenges.";
     }
 
     if (
@@ -183,7 +200,10 @@ const Chatbot = ({ isOpen = false }: ChatbotProps) => {
       return "Goodbye! Feel free to explore the site more, and reach out anytime if you have questions. 👋";
     }
 
-    if (message.includes("help") || message.includes("what can you do")) {
+    if (
+      message.includes("help") || 
+      message.includes("what can you do")
+    ) {
       return "I can help you with:\n• Learn about Paras's background and experience\n• Navigate to different sections (About, Experience, Projects, etc.)\n• Get his contact information\n• Learn about his skills and certifications\n\nJust ask me anything about Paras or the website!";
     }
 
@@ -323,6 +343,7 @@ const Chatbot = ({ isOpen = false }: ChatbotProps) => {
         }, 100);
       },
     },
+    
     {
       label: "Contact",
       action: () => {
