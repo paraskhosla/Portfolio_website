@@ -105,7 +105,7 @@ const Chatbot = ({ isOpen = false }: ChatbotProps) => {
       message.includes("introduction")
     ) {
       setTimeout(() => scrollToSection("about"), 1000);
-      return "Paras is an enthusiastic and curious problem-solver who thrives on tackling challenges from different domains. With a mix of technical expertise and creative thinking, he enjoys finding practical solutions that make a real impact. Once he commits to a goal, he follows through with determination and optimism. Outside of work, he loves cycling, traveling, exploring new cultures, and spending time on personal development projects that keep him learning and growing.";
+      return "Paras is a curious problem-solver who thrives on challenges across domains. Combining technical skills with creative thinking, he delivers practical solutions with determination. Outside work, he enjoys cycling, traveling, exploring cultures, and pursuing projects that fuel his growth.";
     }
 
     if (
@@ -114,7 +114,7 @@ const Chatbot = ({ isOpen = false }: ChatbotProps) => {
       message.includes("job")
     ) {
       setTimeout(() => scrollToSection("experience"), 1000);
-      return "Paras has professional experience at DAF Trucks N.V. (Software Integration & Dashboard Development) and Versuni (Embedded systems & Machine learning Engineer). Let me take you to the Experience section!";
+      return "Paras has professional experience at DAF Trucks N.V. (Software Integration & Dashboard Development) and Versuni (Machine learning Engineer & Embedded systems). Let me take you to the Experience section!";
     }
 
     if (
