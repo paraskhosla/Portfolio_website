@@ -235,7 +235,7 @@ const HomePage = () => {
             <div className="group space-y-2 p-4 rounded-xl bg-white/70 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:bg-white/90 hover:scale-[1.02]">
               <div className="flex justify-between items-center">
                 <span className="font-medium text-sm sm:text-base group-hover:text-teal-600 transition-colors duration-300">
-                  Test Automation (Tosca, Postman)
+                  Test Automation (Postman, Tosca)
                 </span>
                 <span className="text-sm sm:text-base font-semibold bg-teal-100 px-2 py-1 rounded-full group-hover:bg-teal-200 transition-colors duration-300">
                   65%
@@ -522,9 +522,11 @@ const HomePage = () => {
           </div>
 
           <div className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p className="text-gray-500 text-xs sm:text-sm text-center sm:text-left">
-              Copyright © 2025 Paras Khosla. All rights reserved.
-            </p>
+            <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
+              <p className="text-gray-500 text-xs sm:text-sm text-center sm:text-left">
+                Copyright © 2025 Paras Khosla. All rights reserved.
+              </p>
+            </div>
 
             <div className="flex gap-3 sm:gap-4">
               <a
@@ -599,17 +601,21 @@ const HomePage = () => {
       </footer>
 
       {/* Scroll to top button - only visible in contact section */}
-      {showScrollToTop && (
-        <div className="fixed bottom-4 sm:bottom-6 md:bottom-8 right-4 sm:right-6 md:right-8 z-40">
-          <button
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="bg-gray-900 text-white p-2 sm:p-3 rounded-full shadow-lg hover:bg-gray-800 transition-all duration-300 transform hover:scale-110"
-            aria-label="Scroll to top"
-          >
-            <ArrowUp className="h-4 w-4 sm:h-5 sm:w-5" />
-          </button>
-        </div>
-      )}
+      <div
+        className={`fixed bottom-4 sm:bottom-6 md:bottom-8 right-4 sm:right-6 md:right-8 z-40 transition-all duration-500 ease-in-out transform ${
+          showScrollToTop
+            ? "opacity-100 translate-y-0 scale-100"
+            : "opacity-0 translate-y-4 scale-95 pointer-events-none"
+        }`}
+      >
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="bg-gray-900 text-white p-2 sm:p-3 rounded-full shadow-lg hover:bg-gray-800 transition-all duration-300 transform hover:scale-110"
+          aria-label="Scroll to top"
+        >
+          <ArrowUp className="h-4 w-4 sm:h-5 sm:w-5" />
+        </button>
+      </div>
 
       {/* Chatbot */}
       <Chatbot />

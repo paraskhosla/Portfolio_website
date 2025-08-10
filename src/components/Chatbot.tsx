@@ -50,6 +50,7 @@ const Chatbot = ({ isOpen = false }: ChatbotProps) => {
   const [inputValue, setInputValue] = useState("");
   const [isTyping, setIsTyping] = useState(false);
   const [showInitialMessage, setShowInitialMessage] = useState(false);
+  const [hasInitiallyLoaded, setHasInitiallyLoaded] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
@@ -71,6 +72,14 @@ const Chatbot = ({ isOpen = false }: ChatbotProps) => {
       setShowInitialMessage(false);
     }
   }, [isChatOpen]);
+
+  useEffect(() => {
+    // Add initial load animation with delay
+    const timer = setTimeout(() => {
+      setHasInitiallyLoaded(true);
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, []);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -547,42 +556,68 @@ const Chatbot = ({ isOpen = false }: ChatbotProps) => {
 
       {/* Chat Toggle Button */}
       <motion.div
+        initial={{ scale: 0, rotate: -180, opacity: 0 }}
+        animate={{
+          scale: hasInitiallyLoaded ? 1 : 0,
+          rotate: hasInitiallyLoaded ? 0 : -180,
+          opacity: hasInitiallyLoaded ? 1 : 0,
+        }}
+        transition={{
+          duration: 0.8,
+          ease: "easeOut",
+          type: "spring",
+          stiffness: 100,
+          damping: 15,
+        }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        transition={{ duration: 0.2 }}
       >
-        <Button
-          onClick={() => setIsChatOpen(!isChatOpen)}
-          className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white rounded-full w-12 h-12 sm:w-14 sm:h-14 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center"
-          style={{
-            animation: "glow 2s ease-in-out infinite alternate",
+        <motion.div
+          animate={{
+            y: hasInitiallyLoaded ? [0, -10, 0] : 0,
           }}
-          size="sm"
+          transition={{
+            duration: 2,
+            ease: "easeInOut",
+            repeat: 10,
+            delay: 1.2,
+          }}
         >
-          <AnimatePresence mode="wait">
-            {isChatOpen ? (
-              <motion.div
-                key="close"
-                initial={{ rotate: -90, opacity: 0 }}
-                animate={{ rotate: 0, opacity: 1 }}
-                exit={{ rotate: 90, opacity: 0 }}
-                transition={{ duration: 0.2 }}
-              >
-                <X className="h-5 w-5 sm:h-6 sm:w-6" />
-              </motion.div>
-            ) : (
-              <motion.div
-                key="open"
-                initial={{ rotate: 90, opacity: 0 }}
-                animate={{ rotate: 0, opacity: 1 }}
-                exit={{ rotate: -90, opacity: 0 }}
-                transition={{ duration: 0.2 }}
-              >
-                <MessageCircle className="h-5 w-5 sm:h-6 sm:w-6" />
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </Button>
+          <Button
+            onClick={() => setIsChatOpen(!isChatOpen)}
+            className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white rounded-full w-12 h-12 sm:w-14 sm:h-14 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center"
+            style={{
+              animation: hasInitiallyLoaded
+                ? "glow 2s ease-in-out infinite alternate"
+                : "none",
+            }}
+            size="sm"
+          >
+            <AnimatePresence mode="wait">
+              {isChatOpen ? (
+                <motion.div
+                  key="close"
+                  initial={{ rotate: -90, opacity: 0 }}
+                  animate={{ rotate: 0, opacity: 1 }}
+                  exit={{ rotate: 90, opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <X className="h-5 w-5 sm:h-6 sm:w-6" />
+                </motion.div>
+              ) : (
+                <motion.div
+                  key="open"
+                  initial={{ rotate: 90, opacity: 0 }}
+                  animate={{ rotate: 0, opacity: 1 }}
+                  exit={{ rotate: -90, opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <MessageCircle className="h-5 w-5 sm:h-6 sm:w-6" />
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </Button>
+        </motion.div>
       </motion.div>
     </div>
   );
