@@ -10,8 +10,8 @@ interface HeroSectionProps {
 
 const HeroSection = ({
   name = "Hi, I'm Paras Khosla",
-  title = "Embedded & Software Developer",
-  description = "I am an Embedded & Software Engineer with a passion for turning complex data into clear, actionable insights. With hands-on experience in dashboard development, cloud integration, and embedded systems, I bring a blend of technical expertise and a strong commitment to delivering reliable, high-quality solutions. Organized, driven, and eager to learn, I thrive on challenges and continuously aim for excellence in every project I undertake.",
+  title = "Developer & Operations Analyst",
+  description = "I’m a tech problem-solver who thrives on turning complex ideas into practical, high-impact solutions. From building intuitive dashboards to integrating cloud platforms and streamlining processes, I adapt quickly to new tools and challenges. Organized, curious, and results-driven, I’m committed to delivering work that’s not only functional but exceptional.",
 }: HeroSectionProps) => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
