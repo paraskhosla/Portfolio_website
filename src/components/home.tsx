@@ -515,7 +515,7 @@ const HomePage = () => {
                 Specializations
               </h4>
               <p className="text-gray-400 text-sm sm:text-base">
-                Embedded systems, Software developer, Azure DevOps, PowerBi,
+                Azure DevOps, Software developer, Embedded systems, PowerBi,
                 Test automation
               </p>
             </div>
