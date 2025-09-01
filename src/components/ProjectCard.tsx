@@ -43,7 +43,7 @@ const ProjectCard = ({
       // Hide loading message after 1 second
       setTimeout(() => {
         setShowLoadingMessage(false);
-      }, 1000);
+      }, 2000);
     } else {
       window.open(url, "_blank");
     }
