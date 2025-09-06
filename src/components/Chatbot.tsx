@@ -387,7 +387,7 @@ const Chatbot = ({ isOpen = false }: ChatbotProps) => {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.8, y: 20 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
-            className="bg-white rounded-lg shadow-2xl border border-gray-200 w-80 sm:w-96 h-[450px] mb-4 flex flex-col overflow-hidden max-h-[80vh] sm:max-h-[450px]"
+            className="bg-white rounded-lg shadow-2xl border border-gray-200 w-80 sm:w-96 h-[400px] mb-4 flex flex-col overflow-hidden max-h-[80vh] sm:max-h-[400px]"
           >
             {/* Header */}
             <div className="bg-gradient-to-r from-green-500 to-blue-500 text-white p-4 flex items-center justify-between">
