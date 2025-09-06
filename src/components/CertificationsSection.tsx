@@ -204,14 +204,15 @@ const defaultCertifications: Certification[] = [
   },
   {
     id: "3",
-    title: "AZ-900: Introduction to Microsoft Azure: Describe cloud concepts",
+    title: "AZ-500: Secure compute, storage, and databases",
     issuer: "Microsoft",
     date: "2025",
     image:
       "https://images.credly.com/size/340x340/images/70eb1e3f-d4de-4377-a062-b20fb29594ea/azure-data-fundamentals-600x600.png",
     credentialUrl:
-      "https://learn.microsoft.com/api/achievements/share/en-us/paras-5519/URTX9LA3?sharingId=643E3676904F0C54",
-    skills: ["Cloud Computing", "Public vs Private Cloud", "IaaS/PaaS/SaaS"],
+      "https://learn.microsoft.com/api/achievements/share/en-us/Paras-5519/JU47YJDT?sharingId=643E3676904F0C54",
+    skills: ["Identity & Access Management", "Network Security", "Threat Protection & Monitoring"]
+,
   },
   {
     id: "4",
