@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+//import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { Card, CardContent, CardFooter } from "./ui/card";
@@ -26,6 +27,19 @@ const ProjectCard = ({
   const [currentPdfTitle, setCurrentPdfTitle] = useState("");
   const [isPdfLoading, setIsPdfLoading] = useState(true);
   const [showLoadingMessage, setShowLoadingMessage] = useState(false);
+  const [showDesktopMessage, setShowDesktopMessage] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkIfMobile();
+    window.addEventListener("resize", checkIfMobile);
+
+    return () => window.removeEventListener("resize", checkIfMobile);
+  }, []);
+
   const isPdfUrl = (url: string) => {
     return (
       url.toLowerCase().includes(".pdf") || url.toLowerCase().endsWith(".pdf")
@@ -38,12 +52,14 @@ const ProjectCard = ({
       setCurrentPdfTitle(`${title} - ${buttonType}`);
       setIsPdfLoading(true);
       setShowLoadingMessage(true);
+      setShowDesktopMessage(false);
       setIsDialogOpen(true);
 
       // Hide loading message after 1 second
       setTimeout(() => {
         setShowLoadingMessage(false);
-      }, 2000);
+        setShowDesktopMessage(true);
+      }, 3000);
     } else {
       window.open(url, "_blank");
     }
@@ -100,7 +116,15 @@ const ProjectCard = ({
         </CardFooter>
       </Card>
 
-      <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+      <Dialog
+        open={isDialogOpen}
+        onOpenChange={(open) => {
+          setIsDialogOpen(open);
+          if (!open) {
+            setShowDesktopMessage(false);
+          }
+        }}
+      >
         <DialogContent className="max-w-4xl w-[95vw] h-[90vh] p-0">
           <DialogHeader className="p-6 pb-2">
             <DialogTitle className="text-xl font-semibold">
@@ -111,6 +135,13 @@ const ProjectCard = ({
                 <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-primary"></div>
                 <span className="text-sm text-gray-600">
                   Document is loading...
+                </span>
+              </div>
+            )}
+            {showDesktopMessage && isMobile && (
+              <div className="mt-2">
+                <span className="text-sm text-gray-600">
+                  Complete documents can be view on desktop!
                 </span>
               </div>
             )}
@@ -136,7 +167,8 @@ const ProjectCard = ({
             //   className="w-full h-[calc(90vh-120px)] border-0 rounded-md bg-gray-100"
             //   title={currentPdfTitle}
             //   onLoad={() => setIsPdfLoading(false)}
-            // />
+            // /> 
+
             />
           </div>
         </DialogContent>
