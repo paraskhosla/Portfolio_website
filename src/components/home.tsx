@@ -272,7 +272,7 @@ const HomePage = () => {
                   </h3>
                 </div>
                 <p className="text-gray-600 mb-2 text-sm sm:text-base font-medium">
-                  Software Integration & Dashboard Development
+                  Cloud Integration & Dashboard Engineer
                 </p>
                 <p className="text-gray-500 text-xs sm:text-sm bg-gray-50 px-3 py-1 rounded-full inline-block">
                   Eindhoven | Feb 2025 – Jun 2025
@@ -334,7 +334,7 @@ const HomePage = () => {
                   </h3>
                 </div>
                 <p className="text-gray-600 mb-2 text-sm sm:text-base font-medium">
-                  Embedded systems & Machine learning Engineer
+                  Embedded Software & Machine learning Engineer
                 </p>
                 <p className="text-gray-500 text-xs sm:text-sm bg-gray-50 px-3 py-1 rounded-full inline-block">
                   Drachten | Sept 2023 – Jan 2024
@@ -384,6 +384,66 @@ const HomePage = () => {
           </div>
 
           <div className="relative">
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-px h-8 bg-gradient-to-b from-gray-300 to-transparent"></div>
+          </div>
+
+        <div className="group bg-white rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 hover:border-gray-200">
+            <div className="flex flex-col md:flex-row gap-4 sm:gap-6">
+              <div className="md:w-1/3">
+                <div className="flex items-start gap-2 mb-1">
+                  <div className="p-2 bg-purple-50 rounded-lg group-hover:bg-purple-100 transition-colors duration-300">
+                    <Briefcase className="h-4 w-4 sm:h-5 sm:w-5 text-purple-600 flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
+                  </div>
+                  <h3 className="font-bold text-lg sm:text-xl leading-tight group-hover:text-purple-600 transition-colors duration-300">
+                    Color Change Detection – Robot Lab IoT
+                  </h3>
+                </div>
+                <p className="text-gray-600 mb-2 text-sm sm:text-base font-medium">
+                  Embedded & Computer Vision Engineer
+                </p>
+                <p className="text-gray-500 text-xs sm:text-sm bg-gray-50 px-3 py-1 rounded-full inline-block">
+                  Eindhoven | Feb 2023 – June 2024
+                </p>
+              </div>
+
+              <div className="md:w-2/3 mt-4 md:mt-0">
+                <ul className="space-y-3 text-gray-700 text-sm sm:text-base">
+                  <li className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                    <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>
+                      Built a computer vision system on NVIDIA Jetson TX2 to detect color changes in chemical reactions
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                    <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>
+                      Applied OpenCV for real-time image processing to capture subtle color variations
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                    <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>
+                      Created a pipeline storing video streams in MongoDB with Grafana dashboards for visualization
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                    <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>
+                      Explored applications in chemical monitoring, process automation, and industrial IoT
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                    <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>
+                      Collaborated in a multidisciplinary team, combining IoT, vision, and data analytics for real-time monitoring
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        <div className="relative">
             <div className="absolute left-1/2 transform -translate-x-1/2 w-px h-8 bg-gradient-to-b from-gray-300 to-transparent"></div>
           </div>
 
