@@ -141,7 +141,7 @@ const ProjectCard = ({
             {showDesktopMessage && isMobile && (
               <div className="mt-2">
                 <span className="text-sm text-gray-600">
-                  Complete documents can be view on desktop!
+                  This document can be view on desktop!
                 </span>
               </div>
             )}
