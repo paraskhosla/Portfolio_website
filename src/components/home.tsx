@@ -160,14 +160,14 @@ const HomePage = () => {
             <div className="group space-y-2 p-4 rounded-xl bg-white/70 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:bg-white/90 hover:scale-[1.02]">
               <div className="flex justify-between items-center">
                 <span className="font-medium text-sm sm:text-base group-hover:text-blue-600 transition-colors duration-300">
-                  Embedded Software
+                  Embedded Systems (STM32, Microcontrollers)
                 </span>
                 <span className="text-sm sm:text-base font-semibold bg-blue-100 px-2 py-1 rounded-full group-hover:bg-blue-200 transition-colors duration-300">
-                  85%
+                  80%
                 </span>
               </div>
               <Progress
-                value={85}
+                value={80}
                 className="h-3 group-hover:h-4 transition-all duration-300"
               />
             </div>
@@ -175,7 +175,7 @@ const HomePage = () => {
             <div className="group space-y-2 p-4 rounded-xl bg-white/70 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:bg-white/90 hover:scale-[1.02]">
               <div className="flex justify-between items-center">
                 <span className="font-medium text-sm sm:text-base group-hover:text-green-600 transition-colors duration-300">
-                  Azure (Functions, Storage, AppIn)
+                  Cloud & Azure (Functions, Storage, App Insights)
                 </span>
                 <span className="text-sm sm:text-base font-semibold bg-green-100 px-2 py-1 rounded-full group-hover:bg-green-200 transition-colors duration-300">
                   80%
@@ -190,7 +190,7 @@ const HomePage = () => {
             <div className="group space-y-2 p-4 rounded-xl bg-white/70 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:bg-white/90 hover:scale-[1.02]">
               <div className="flex justify-between items-center">
                 <span className="font-medium text-sm sm:text-base group-hover:text-purple-600 transition-colors duration-300">
-                  Python, Bash &amp; Automation Scripts
+                  Automation (Python, Bash)
                 </span>
                 <span className="text-sm sm:text-base font-semibold bg-purple-100 px-2 py-1 rounded-full group-hover:bg-purple-200 transition-colors duration-300">
                   70%
@@ -205,14 +205,14 @@ const HomePage = () => {
             <div className="group space-y-2 p-4 rounded-xl bg-white/70 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:bg-white/90 hover:scale-[1.02]">
               <div className="flex justify-between items-center">
                 <span className="font-medium text-sm sm:text-base group-hover:text-orange-600 transition-colors duration-300">
-                  STM32 &amp; Microcontrollers
+                  CI/CD & Git
                 </span>
                 <span className="text-sm sm:text-base font-semibold bg-orange-100 px-2 py-1 rounded-full group-hover:bg-orange-200 transition-colors duration-300">
-                  75%
+                  70%
                 </span>
               </div>
               <Progress
-                value={75}
+                value={70}
                 className="h-3 group-hover:h-4 transition-all duration-300"
               />
             </div>
@@ -220,14 +220,14 @@ const HomePage = () => {
             <div className="group space-y-2 p-4 rounded-xl bg-white/70 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:bg-white/90 hover:scale-[1.02]">
               <div className="flex justify-between items-center">
                 <span className="font-medium text-sm sm:text-base group-hover:text-indigo-600 transition-colors duration-300">
-                  Power BI / Dashboards
+                  Dashboards (Power BI, Grafana, SCOM)
                 </span>
                 <span className="text-sm sm:text-base font-semibold bg-indigo-100 px-2 py-1 rounded-full group-hover:bg-indigo-200 transition-colors duration-300">
-                  75%
+                  70%
                 </span>
               </div>
               <Progress
-                value={75}
+                value={70}
                 className="h-3 group-hover:h-4 transition-all duration-300"
               />
             </div>
@@ -238,11 +238,11 @@ const HomePage = () => {
                   Test Automation (Postman, Tosca)
                 </span>
                 <span className="text-sm sm:text-base font-semibold bg-teal-100 px-2 py-1 rounded-full group-hover:bg-teal-200 transition-colors duration-300">
-                  65%
+                  60%
                 </span>
               </div>
               <Progress
-                value={65}
+                value={60}
                 className="h-3 group-hover:h-4 transition-all duration-300"
               />
             </div>
@@ -284,15 +284,15 @@ const HomePage = () => {
                   <li className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors duration-200">
                     <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
                     <span>
-                      Built dashboards in SCOM and Power BI to monitor system
-                      health and project performance after new releases
+                      Developed dashboards in SCOM and Power BI to monitor system health and project 
+                      performance after new releases
                     </span>
                   </li>
                   <li className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors duration-200">
                     <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
                     <span>
-                      Used Azure environment to send certificate data to
-                      Application Insights
+                      Implemented Azure Functions to send certificate 
+                      meta data to Application Insights
                     </span>
                   </li>
                   <li className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors duration-200">
@@ -411,7 +411,7 @@ const HomePage = () => {
                   <li className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors duration-200">
                     <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
                     <span>
-                      Built a computer vision system on NVIDIA Jetson TX2 to detect color changes in chemical reactions
+                      Developed a computer vision system on NVIDIA Jetson TX2 to detect color changes in chemical reactions
                     </span>
                   </li>
                   <li className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors duration-200">
