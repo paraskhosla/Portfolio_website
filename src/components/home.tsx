@@ -533,8 +533,7 @@ const HomePage = () => {
                 Paras Khosla
               </h3>
               <p className="text-gray-400 text-sm sm:text-base">
-                Software developer with passion for development and exciting
-                innovation
+                Developer passionate about building smart, reliable solutions
               </p>
             </div>
 
@@ -575,8 +574,8 @@ const HomePage = () => {
                 Specializations
               </h4>
               <p className="text-gray-400 text-sm sm:text-base">
-                Azure DevOps, Software developer, Embedded systems, PowerBi,
-                Test automation
+                Cloud & Azure DevOps, Embedded Systems, Dashboards (Power BI), 
+                Test Automation
               </p>
             </div>
           </div>
