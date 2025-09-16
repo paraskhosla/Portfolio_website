@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Award, ExternalLink } from "lucide-react";
+import { Award, ExternalLink, ChevronDown, ChevronUp  } from "lucide-react";
 
 interface Certification {
   id: string;
@@ -19,6 +19,9 @@ interface CertificationsSectionProps {
 const CertificationsSection: React.FC<CertificationsSectionProps> = ({
   certifications = defaultCertifications,
 }) => {
+  const [showAll, setShowAll] = useState(false);
+  const displayedCertifications = showAll ? certifications : certifications.slice(0, 3);
+  
   return (
     <section
       id="certifications"
@@ -136,6 +139,34 @@ const CertificationsSection: React.FC<CertificationsSectionProps> = ({
             </motion.div>
           ))}
         </div>
+
+        {/* View All / Show Less Button */}
+        {certifications.length > 3 && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="text-center mt-8 sm:mt-12"
+          >
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-lg hover:from-blue-600 hover:to-indigo-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl font-medium"
+            >
+              {showAll ? (
+                <>
+                  Show Less
+                  <ChevronUp className="w-4 h-4" />
+                </>
+              ) : (
+                <>
+                  View All ({certifications.length} Certifications)
+                  <ChevronDown className="w-4 h-4" />
+                </>
+              )}
+            </button>
+          </motion.div>
+        )}
 
         {/* Stats Section */}
         <motion.div
