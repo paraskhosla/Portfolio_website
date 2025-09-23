@@ -94,7 +94,7 @@ const HeroSection = ({
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <img
-            src="https://res.cloudinary.com/djraxo05u/image/upload/v1758533723/Linkedin_s7am6q.png"
+            src="https://res.cloudinary.com/djraxo05u/image/upload/v1758625093/website_d3rhtq.png"
             alt="Paras Khosla"
             className="w-full h-full object-cover"
           />
