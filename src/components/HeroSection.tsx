@@ -100,30 +100,28 @@ const HeroSection = ({
           />
         </motion.div>
       </div>
-      {/* Scroll indicator */}
+      {/* Scroll indicator - hidden on mobile */}
       <motion.div
-        className="absolute left-1/2 -translate-x-1/2 flex flex-col items-center bottom-[60px] sm:bottom-[80px] md:bottom-[102px]"
+        className="hidden md:flex absolute left-1/2 -translate-x-1/2 flex-col items-center bottom-[60px] sm:bottom-[80px] md:bottom-[102px]"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.5 }}
       >
-        <span className="text-white text-xs sm:text-sm mb-2 sm:mb-3">
-          Scroll Down
-        </span>
-        <div className="w-5 h-8 sm:w-6 sm:h-10 border-2 border-white rounded-full flex justify-center pt-1.5 sm:pt-2">
-          <motion.div
-            className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-white rounded-full"
-            animate={{
-              y: [0, 8, 0],
-            }}
-            transition={{
-              repeat: Infinity,
-              duration: 1.5,
-              ease: "easeInOut",
-            }}
-          />
-        </div>
-      </motion.div>
+      <span className="text-white text-xs sm:text-sm mb-2 sm:mb-3">
+        Scroll Down
+      </span>
+      <div className="w-5 h-8 sm:w-6 sm:h-10 border-2 border-white rounded-full flex justify-center pt-1.5 sm:pt-2">
+        <motion.div
+          className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-white rounded-full"
+          animate={{ y: [0, 8, 0] }}
+          transition={{
+            repeat: Infinity,
+            duration: 1.5,
+            ease: "easeInOut",
+          }}
+        />
+      </div>
+    </motion.div>
     </section>
   );
 };
