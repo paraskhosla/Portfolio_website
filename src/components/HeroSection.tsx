@@ -9,7 +9,7 @@ interface HeroSectionProps {
 }
 
 const HeroSection = ({
-  name = "Hi, I'm Paras Khosla",
+  name = "Hallo!, Ik ben Paras",
   title = "Embedded & Cloud Integration Engineer",
   description = "I’m a tech problem-solver who turns complex ideas into practical solutions. I build dashboards, integrate cloud platforms, and automate processes. Curious, organized, and results-driven, I aim for work that’s not just functional but impactful",
 }: HeroSectionProps) => {
