@@ -242,26 +242,60 @@ const defaultCertifications: Certification[] = [
       "https://images.credly.com/size/340x340/images/70eb1e3f-d4de-4377-a062-b20fb29594ea/azure-data-fundamentals-600x600.png",
     credentialUrl:
       "https://learn.microsoft.com/api/achievements/share/en-us/Paras-5519/JU47YJDT?sharingId=643E3676904F0C54",
-    skills: ["Identity & Access Management", "Network Security", "Threat Protection & Monitoring"]
+    skills: ["Identity & Access Management", "Network Security", "Monitoring"]
 ,
   },
   {
     id: "4",
-    title: "The core architectural components of Azure",
+    title: "AZ-400: Implement CI with Azure Pipelines and GitHub Actions",
     issuer: "Microsoft",
     date: "2025",
     image:
       "https://images.credly.com/size/340x340/images/70eb1e3f-d4de-4377-a062-b20fb29594ea/azure-data-fundamentals-600x600.png",
     credentialUrl:
-      "https://learn.microsoft.com/api/achievements/share/en-us/Paras-5519/NV6MC69F?sharingId=643E3676904F0C54",
-    skills: [
-      "Azure Architecture",
-      "Resource Groups",
-      "Regions & Availability Zones",
-    ],
+      "https://learn.microsoft.com/en-us/users/paras-5519/achievements/3a3d8uah",
+    skills: ["CI/CD", "GitHub", "Pipelines"]
+,
   },
   {
     id: "5",
+    title: "AZ-700 Design and Implement Microsoft Azure Network Solutions",
+    issuer: "Microsoft",
+    date: "2025",
+    image:
+      "https://images.credly.com/size/340x340/images/70eb1e3f-d4de-4377-a062-b20fb29594ea/azure-data-fundamentals-600x600.png",
+    credentialUrl:
+      "https://learn.microsoft.com/en-us/users/paras-5519/achievements/9y94knxu",
+    skills: ["Networking", "VPN", "Firewalls"]
+,
+  },
+  {
+    id: "6",
+    title: "Introduction to Kubernetes on Azure",
+    issuer: "Microsoft",
+    date: "2025",
+    image:
+      "https://images.credly.com/size/340x340/images/70eb1e3f-d4de-4377-a062-b20fb29594ea/azure-data-fundamentals-600x600.png",
+    credentialUrl:
+      "https://learn.microsoft.com/en-us/users/paras-5519/achievements/h7h9bg78",
+    skills: ["Kubernetes", "AKS", "Containers"]
+,
+  },
+  {
+    id: "7",
+    title: "Introduction to generative AI concepts",
+    issuer: "Microsoft",
+    date: "2025",
+    image:
+      "https://images.credly.com/size/340x340/images/70eb1e3f-d4de-4377-a062-b20fb29594ea/azure-data-fundamentals-600x600.png",
+    credentialUrl:
+      "https://learn.microsoft.com/en-us/users/paras-5519/achievements/8z8sp4gw",
+    skills: [
+      "GenAI", "Prompting", "AI Ethics",
+    ],
+  },
+  {
+    id: "8",
     title: "ICT & Technology Semester Advanced (FTRBSpring2024BSC)",
     issuer: "Fontys University",
     date: "2024",
@@ -271,7 +305,7 @@ const defaultCertifications: Certification[] = [
     skills: ["System Architecture", "Software Design", "Solution Engineering"],
   },
   {
-    id: "6",
+    id: "9",
     title: "ICT & Smart Industry Semester 4 (FTRBSPRN2023BSC)",
     issuer: "Fontys University",
     date: "2023",
@@ -281,7 +315,7 @@ const defaultCertifications: Certification[] = [
     skills: ["Industrial Automation", "CI/CD Pipelines", "DevOps Practices"],
   },
   {
-    id: "7",
+    id: "10",
     title: "ICT & Technology Semester 3 (FTCBFALL2022BSC)",
     issuer: "Fontys University",
     date: "2023",
@@ -295,7 +329,7 @@ const defaultCertifications: Certification[] = [
     ],
   },
   {
-    id: "8",
+    id: "11",
     title: "ICT & Technology Semester 2 (FTCBSPRN2022BSC)",
     issuer: "Fontys University",
     date: "2022",
@@ -305,7 +339,7 @@ const defaultCertifications: Certification[] = [
     skills: ["Agile Methodology", "Scrum Framework", "Team Collaboration"],
   },
   {
-    id: "9",
+    id: "12",
     title: "ICT & Technology Semester 1 (FTCBSPRN2021)",
     issuer: "Fontys University",
     date: "2021",
