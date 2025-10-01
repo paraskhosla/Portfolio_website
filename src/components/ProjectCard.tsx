@@ -1,4 +1,3 @@
-//import React, { useState } from "react";
 import React, { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
@@ -151,7 +150,7 @@ const ProjectCard = ({
               <div className="absolute inset-0 z-10 flex items-center justify-center bg-white/95 backdrop-blur-sm rounded-md">
                 <div className="flex flex-col items-center space-y-3">
                   <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
-                  <span className="text-gray-700 text-sm font-medium">
+                  <span className="text-white text-sm font-medium">
                     Document is loading…
                   </span>
                 </div>
