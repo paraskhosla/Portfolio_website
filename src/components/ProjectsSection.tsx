@@ -72,7 +72,7 @@ const defaultProjects: Project[] = [
     id: "1",
     title: "VSS Insights",
     description:
-      "Dashboards from DAF internship, visualizing VSS metrics and certificate expirations with Power BI, SCOM, and Azure DevOps App Insights for real-time monitoring",
+      "During my graduation project at DAF, I automated monitoring of VSS metrics and certificate expirations with Azure DevOps, Azure functions, Application Insights, Power BI, and SCOM.",
     image:
       "https://res.cloudinary.com/djraxo05u/image/upload/v1752008111/daf_intern_image_bzc3sf.jpg",
     tags: ["Azure DevOps", ".Net Framework", "Power Bi"],
