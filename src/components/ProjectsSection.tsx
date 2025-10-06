@@ -74,7 +74,7 @@ const defaultProjects: Project[] = [
     description:
       "During my graduation project at DAF, I automated monitoring of VSS metrics and certificate expirations with Azure DevOps, Azure functions, Application Insights, Power BI, and SCOM.",
     image:
-      "https://res.cloudinary.com/djraxo05u/image/upload/v1752008111/daf_intern_image_bzc3sf.jpg",
+      "https://res.cloudinary.com/djraxo05u/image/upload/v1759765237/daf_project_r5ebib.png",
     tags: ["Azure DevOps", ".Net Framework", "Power Bi"],
     caseStudyUrl: "https://paraskhosla.github.io/Portfolio_website/Daf_Internship_Product_System_Design_Document.pdf",
     demoUrl: "https://paraskhosla.github.io/Portfolio_website/Daf_Dashboard_Demo.pdf",
@@ -83,7 +83,7 @@ const defaultProjects: Project[] = [
     id: "2",
     title: "Floor Detection using ML",
     description:
-      "Implemented LIS2DH12 sensor and developed deep learning model to classify floor type using motor current data. Achieved 70% accuracy via tuning",
+      "At Versuni (Philips), I developed a deep learning model for floor-type classification using motor current data and implemented the LIS2DH12 sensor, achieving 70% accuracy.",
     image:
       "https://res.cloudinary.com/djraxo05u/image/upload/v1752007180/philips_tcdcum.jpg",
     tags: ["LIS2DH12", "Python", "Deep Learning"],
