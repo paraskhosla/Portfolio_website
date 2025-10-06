@@ -92,12 +92,12 @@ const defaultProjects: Project[] = [
   },
   {
     id: "3",
-    title: "Color Detection with OpenCV",
+    title: "Azure IoT Hub & Node-RED Integration",
     description:
-      "A real-time color change detection system using the Jetson TX2's onboard camera like cabbage water, enabling real-world chemical reaction analysis directly at the edge",
+      "Connected IoT devices to Azure IoT Hub for real-time data monitoring using Azure dashboards. Linked Node-RED for message processing and visualization, enabling smooth IoT data flow within the Azure DevOps setup.",
     image:
-      "https://res.cloudinary.com/djraxo05u/image/upload/v1752007829/colordetect_celjua.jpg",
-    tags: ["Jetson TX2", "Python", "OpenCV"],
+      "https://res.cloudinary.com/djraxo05u/image/upload/v1759763171/azure_project__sssahr.png",
+    tags: ["Azure IoT Hub", "Node-RED", "Cloud Integration"],
     caseStudyUrl: "https://paraskhosla.github.io/Portfolio_website/Color_Change_detection.pdf",
     demoUrl: "https://youtu.be/j5ihSZjRxy4",
   },
@@ -127,14 +127,14 @@ const defaultProjects: Project[] = [
   },
   {
     id: "6",
-    title: "Thingy 91 Configuration",
+    title: "Color Detection with OpenCV",
     description:
-      "IoT Communication and Infrastructure project using Thingy 91 microcontroller with LTE-M, NB-IoT, and GNSS connectivity",
+      "A real-time color change detection system using the Jetson TX2's onboard camera like cabbage water, enabling real-world chemical reaction analysis directly at the edge",
     image:
-      "https://res.cloudinary.com/djraxo05u/image/upload/v1752007183/thingy91_qfqhif.png",
+      "https://res.cloudinary.com/djraxo05u/image/upload/v1752007829/colordetect_celjua.jpg",
     tags: ["GNSS", "IOT", "VS Code"],
-    caseStudyUrl: "https://paraskhosla.github.io/Portfolio_website/thingy91-report.pdf",
-    demoUrl: "https://github.com/paraskhosla/Thingy91-code/tree/main/src",
+    caseStudyUrl: "https://paraskhosla.github.io/Portfolio_website/Color_Change_detection.pdf",
+    demoUrl: "https://youtu.be/j5ihSZjRxy4",
   },
 ];
 
