@@ -92,7 +92,7 @@ const defaultProjects: Project[] = [
   },
   {
     id: "3",
-    title: "Azure IoT Hub & Node-RED Integration",
+    title: "Azure & Node-RED Integration",
     description:
       "Connected IoT devices to Azure IoT Hub for real-time data monitoring using Azure dashboards. Linked Node-RED for message processing and visualization, enabling smooth IoT data flow within the Azure DevOps setup.",
     image:
