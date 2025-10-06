@@ -98,8 +98,8 @@ const defaultProjects: Project[] = [
     image:
       "https://res.cloudinary.com/djraxo05u/image/upload/v1759763171/azure_project__sssahr.png",
     tags: ["Azure IoT Hub", "Node-RED", "Cloud Integration"],
-    caseStudyUrl: "https://paraskhosla.github.io/Portfolio_website/Color_Change_detection.pdf",
-    demoUrl: "https://youtu.be/j5ihSZjRxy4",
+    caseStudyUrl: "https://paraskhosla.github.io/Portfolio_website/Challenge Azure.pdf",
+    demoUrl: "https://paraskhosla.github.io/Portfolio_website/Challenge Azure.pdf",
   },
   {
     id: "4",
