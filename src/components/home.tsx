@@ -160,7 +160,7 @@ const HomePage = () => {
             <div className="group space-y-2 p-4 rounded-xl bg-white/70 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:bg-white/90 hover:scale-[1.02]">
               <div className="flex justify-between items-center">
                 <span className="font-medium text-sm sm:text-base group-hover:text-blue-600 transition-colors duration-300">
-                  Embedded Systems (STM32, Microcontrollers)
+                  Cloud & Azure (Functions, Storage, KeyVault, App Insights)
                 </span>
                 <span className="text-sm sm:text-base font-semibold bg-blue-100 px-2 py-1 rounded-full group-hover:bg-blue-200 transition-colors duration-300">
                   80%
@@ -175,14 +175,14 @@ const HomePage = () => {
             <div className="group space-y-2 p-4 rounded-xl bg-white/70 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:bg-white/90 hover:scale-[1.02]">
               <div className="flex justify-between items-center">
                 <span className="font-medium text-sm sm:text-base group-hover:text-green-600 transition-colors duration-300">
-                  Cloud & Azure (Functions, Storage, App Insights)
+                  Embedded Systems (STM32, Microcontrollers)
                 </span>
                 <span className="text-sm sm:text-base font-semibold bg-green-100 px-2 py-1 rounded-full group-hover:bg-green-200 transition-colors duration-300">
-                  80%
+                  70%
                 </span>
               </div>
               <Progress
-                value={80}
+                value={70}
                 className="h-3 group-hover:h-4 transition-all duration-300"
               />
             </div>
