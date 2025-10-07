@@ -74,7 +74,7 @@ const defaultProjects: Project[] = [
     description:
       "During my graduation project at DAF, I automated monitoring of VSS metrics and certificate expirations with Azure DevOps, Azure functions, Application Insights, Power BI, and SCOM.",
     image:
-      "https://res.cloudinary.com/djraxo05u/image/upload/v1759765237/daf_project_r5ebib.png",
+      "https://res.cloudinary.com/djraxo05u/image/upload/v1759790108/daf_grafana_qja1uy.png",
     tags: ["Azure DevOps", ".Net Framework", "Power Bi"],
     caseStudyUrl: "https://paraskhosla.github.io/Portfolio_website/Daf_Internship_Product_System_Design_Document.pdf",
     demoUrl: "https://paraskhosla.github.io/Portfolio_website/Daf_Dashboard_Demo.pdf",

@@ -88,7 +88,7 @@ const HomePage = () => {
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
               <div className="bg-gray-200 p-3 sm:p-4 rounded-lg text-center transition-colors duration-200 hover:bg-gray-300">
                 <h4 className="font-medium text-xs sm:text-sm">
-                  Embedded Systems
+                  Azure DevOps
                 </h4>
               </div>
               <div
@@ -112,7 +112,7 @@ const HomePage = () => {
                   transition-colors duration-200 hover:bg-gray-300"
               >
                 <h4 className="font-medium text-xs sm:text-sm">
-                  IoT &amp; Sensors
+                  Embedded Systems
                 </h4>
               </div>
               <div
