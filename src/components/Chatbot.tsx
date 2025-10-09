@@ -184,6 +184,7 @@ const Chatbot = ({ isOpen = false }: ChatbotProps) => {
     if (
       message.includes("hello") ||
       message.includes("hi") ||
+      message.includes("holla!") ||
       message.includes("hey")
     ) {
       return "Hello! I'm here to help you learn more about Paras Khosla. You can ask me about his experience, skills, projects, or how to contact him. What would you like to know?";
