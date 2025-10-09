@@ -114,7 +114,7 @@ const Chatbot = ({ isOpen = false }: ChatbotProps) => {
       message.includes("job")
     ) {
       setTimeout(() => scrollToSection("experience"), 1000);
-      return "Paras has professional experience at DAF Trucks N.V. (Software Integration & Dashboard Development) and Versuni (Machine learning Engineer & Embedded systems). Let me take you to the Experience section!";
+      return "Paras has professional experience at DAF Trucks N.V., where he worked on Azure integration and dashboard development, and at Versuni (formerly Philips), where he focused on machine learning and embedded systems. Let’s head to the Experience section to learn more!";
     }
 
     if (
@@ -132,7 +132,7 @@ const Chatbot = ({ isOpen = false }: ChatbotProps) => {
       message.includes("work")
     ) {
       setTimeout(() => scrollToSection("projects"), 1000);
-      return "Paras has worked on various projects including embedded systems, dashboard development, and machine learning applications. I'm taking you to the Projects section to see his work!";
+      return "Paras has worked on a range of projects across Azure cloud solutions, dashboard development, machine learning, embedded systems, and App design. Let’s head to the Projects section to check out his work!";
     }
 
     if (
@@ -140,7 +140,7 @@ const Chatbot = ({ isOpen = false }: ChatbotProps) => {
       message.includes("certificate")
     ) {
       setTimeout(() => scrollToSection("certifications"), 1000);
-      return "Paras has certifications from Microsoft and Fontys University. Let me show you the Certifications section!";
+      return "Paras has certifications from Microsoft Azure and Fontys University. Let me show you the Certifications section!";
     }
 
     if (
@@ -151,7 +151,7 @@ const Chatbot = ({ isOpen = false }: ChatbotProps) => {
       message.includes("hire")
     ) {
       setTimeout(() => scrollToSection("contact"), 1000);
-      return "You can reach Paras at prskhsl@gmail.com or connect with him on LinkedIn and Instagram. He's currently looking for his next full-time role! I'm scrolling to the Contact section.";
+      return "You can reach Paras at Prskhsl@gmail.com or connect with him on LinkedIn and Instagram. He's currently looking for his next full-time role! I'm scrolling to the Contact section.";
     }
 
     if (
