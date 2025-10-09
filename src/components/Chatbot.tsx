@@ -122,6 +122,7 @@ const Chatbot = ({ isOpen = false }: ChatbotProps) => {
       message.includes("technology") ||
       message.includes("tech")
     ) {
+      setTimeout(() => scrollToSection("skills"), 1000);
       return "Paras specializes in:\n• Embedded Software \n• Azure DevOps(Functions, Storage, AppIn) \n• Python & Scripting \n• STM32 & Microcontrollers \n• Power BI / Grafana Dashboards \n• Test Automation in Tosca & Postman \n\nHe also has experience with IoT & Sensors, Git & CI/CD, and Cloud & Monitoring.";
     }
 
@@ -158,6 +159,7 @@ const Chatbot = ({ isOpen = false }: ChatbotProps) => {
       message.includes("study") ||
       message.includes("degree")
     ) {
+      setTimeout(() => scrollToSection("about"), 1000);
       return "Paras has:\n• Information & Communication Technology(ICT) \n• Diploma in Mechanical Engineering \n\nHe brings together hands-on engineering experience with strong IT skills to build practical, tech-driven solutions.";
     }
 
@@ -312,14 +314,15 @@ const Chatbot = ({ isOpen = false }: ChatbotProps) => {
         }, 100);
       },
     },
+
     {
-      label: "Skills",
+      label: "Projects",
       action: () => {
-        setInputValue("What are his skills?");
+        setInputValue("Show me his projects?");
         setTimeout(() => {
           const userMessage: Message = {
             id: Date.now().toString(),
-            text: "What are his skills?",
+            text: "Show me his projects?",
             isBot: false,
             timestamp: new Date(),
           };
@@ -331,7 +334,7 @@ const Chatbot = ({ isOpen = false }: ChatbotProps) => {
             () => {
               const botResponse: Message = {
                 id: (Date.now() + 1).toString(),
-                text: getBotResponse("What are his skills?"),
+                text: getBotResponse("Show me his projects?"),
                 isBot: true,
                 timestamp: new Date(),
               };
