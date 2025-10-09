@@ -145,7 +145,10 @@ const HomePage = () => {
       </section>
 
       {/* Skills Section */}
-      <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8 lg:px-16 max-w-7xl mx-auto bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
+      
+      <section 
+      id="skills"
+      className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8 lg:px-16 max-w-7xl mx-auto bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
         {/* Background decoration */}
         <div className="absolute inset-0 bg-gradient-to-r from-blue-50/30 to-purple-50/30 opacity-50"></div>
         <div className="absolute top-10 left-10 w-32 h-32 bg-blue-200/20 rounded-full blur-3xl"></div>
