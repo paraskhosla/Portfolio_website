@@ -11,6 +11,7 @@ import { ArrowUp, Briefcase, GraduationCap } from "lucide-react";
 
 const HomePage = () => {
   const [showScrollToTop, setShowScrollToTop] = useState(false);
+  const [showAllSkills, setShowAllSkills] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -178,7 +179,7 @@ const HomePage = () => {
             <div className="group space-y-2 p-4 rounded-xl bg-white/70 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:bg-white/90 hover:scale-[1.02]">
               <div className="flex justify-between items-center">
                 <span className="font-medium text-sm sm:text-base group-hover:text-green-600 transition-colors duration-300">
-                  Embedded Systems (STM32, Microcontrollers)
+                  Automation (Azure DevOps)
                 </span>
                 <span className="text-sm sm:text-base font-semibold bg-green-100 px-2 py-1 rounded-full group-hover:bg-green-200 transition-colors duration-300">
                   70%
@@ -193,7 +194,7 @@ const HomePage = () => {
             <div className="group space-y-2 p-4 rounded-xl bg-white/70 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:bg-white/90 hover:scale-[1.02]">
               <div className="flex justify-between items-center">
                 <span className="font-medium text-sm sm:text-base group-hover:text-purple-600 transition-colors duration-300">
-                  Automation (Python, Bash)
+                  Embedded Systems (STM32, Microcontrollers)
                 </span>
                 <span className="text-sm sm:text-base font-semibold bg-purple-100 px-2 py-1 rounded-full group-hover:bg-purple-200 transition-colors duration-300">
                   70%
@@ -204,6 +205,25 @@ const HomePage = () => {
                 className="h-3 group-hover:h-4 transition-all duration-300"
               />
             </div>
+
+            {/* Hide other skills */}
+          {showAllSkills && (
+            <>
+              <div className="group space-y-2 p-4 rounded-xl bg-card/70 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:bg-card/90 hover:scale-[1.02] border border-border animate-in fade-in slide-in-from-top-4 duration-500">
+                  <div className="flex justify-between items-center">
+                    <span className="font-medium text-sm sm:text-base group-hover:text-orange-600 transition-colors duration-300 text-foreground">
+                      STM32 & Microcontrollers
+                    </span>
+                    <span className="text-sm sm:text-base font-semibold bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 px-2 py-1 rounded-full group-hover:bg-orange-200 dark:group-hover:bg-orange-900/50 transition-colors duration-300">
+                      75%
+                    </span>
+                  </div>
+                  <Progress
+                    value={75}
+                    className="h-3 group-hover:h-4 transition-all duration-300"
+                  />
+              </div>
+
 
             <div className="group space-y-2 p-4 rounded-xl bg-white/70 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:bg-white/90 hover:scale-[1.02]">
               <div className="flex justify-between items-center">
@@ -226,11 +246,11 @@ const HomePage = () => {
                   Dashboards (Power BI, Grafana, SCOM)
                 </span>
                 <span className="text-sm sm:text-base font-semibold bg-indigo-100 px-2 py-1 rounded-full group-hover:bg-indigo-200 transition-colors duration-300">
-                  70%
+                  60%
                 </span>
               </div>
               <Progress
-                value={70}
+                value={60}
                 className="h-3 group-hover:h-4 transition-all duration-300"
               />
             </div>
@@ -249,6 +269,35 @@ const HomePage = () => {
                 className="h-3 group-hover:h-4 transition-all duration-300"
               />
             </div>
+            </>
+          )}
+        </div>
+
+          {/* View all skills button */}
+          <div className="flex justify-center mt-8">
+            <button
+              onClick={() => setShowAllSkills(!showAllSkills)}
+              className="group relative px-8 py-3 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white rounded-lg font-semibold shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 overflow-hidden"
+            >
+              <span className="absolute inset-0 bg-gradient-to-r from-pink-600 via-purple-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+              <span className="relative flex items-center gap-2">
+                {showAllSkills ? (
+                  <>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 animate-bounce" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="m18 15-6-6-6 6"/>
+                    </svg>
+                    Show Less
+                  </>
+                ) : (
+                  <>
+                    View All Skills
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 group-hover:translate-y-1 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="m6 9 6 6 6-6"/>
+                    </svg>
+                  </>
+                )}
+              </span>
+            </button>
           </div>
         </div>
       </section>
