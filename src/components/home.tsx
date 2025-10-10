@@ -454,7 +454,7 @@ const HomePage = () => {
                   Embedded & Computer Vision Engineer
                 </p>
                 <p className="text-gray-500 text-xs sm:text-sm bg-gray-50 px-3 py-1 rounded-full inline-block">
-                  Eindhoven | Feb 2023 – June 2024
+                  Eindhoven | Feb 2023 – June 2023
                 </p>
               </div>
 
