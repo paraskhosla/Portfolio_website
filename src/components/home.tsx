@@ -507,8 +507,7 @@ const HomePage = () => {
                   <li className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors duration-200">
                     <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
                     <span>
-                      Developed culinary skills and food preparation techniques
-                      in a fast-paced kitchen environment
+                      Developed hands-on food preparation skills in a fast-paced kitchen environment
                     </span>
                   </li>
                   <li className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors duration-200">
