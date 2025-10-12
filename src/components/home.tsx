@@ -194,7 +194,7 @@ const HomePage = () => {
             <div className="group space-y-2 p-4 rounded-xl bg-white/70 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:bg-white/90 hover:scale-[1.02]">
               <div className="flex justify-between items-center">
                 <span className="font-medium text-sm sm:text-base group-hover:text-purple-600 transition-colors duration-300">
-                  Embedded Systems (STM32, Microcontrollers)
+                  CI/CD & Git
                 </span>
                 <span className="text-sm sm:text-base font-semibold bg-purple-100 px-2 py-1 rounded-full group-hover:bg-purple-200 transition-colors duration-300">
                   70%
@@ -212,33 +212,17 @@ const HomePage = () => {
               <div className="group space-y-2 p-4 rounded-xl bg-card/70 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:bg-card/90 hover:scale-[1.02] border border-border animate-in fade-in slide-in-from-top-4 duration-500">
                   <div className="flex justify-between items-center">
                     <span className="font-medium text-sm sm:text-base group-hover:text-orange-600 transition-colors duration-300 text-foreground">
-                      STM32 & Microcontrollers
+                      Embedded Systems (STM32, Microcontrollers)
                     </span>
                     <span className="text-sm sm:text-base font-semibold bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 px-2 py-1 rounded-full group-hover:bg-orange-200 dark:group-hover:bg-orange-900/50 transition-colors duration-300">
-                      75%
+                      80%
                     </span>
                   </div>
                   <Progress
-                    value={75}
+                    value={80}
                     className="h-3 group-hover:h-4 transition-all duration-300"
                   />
               </div>
-
-
-            <div className="group space-y-2 p-4 rounded-xl bg-white/70 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:bg-white/90 hover:scale-[1.02]">
-              <div className="flex justify-between items-center">
-                <span className="font-medium text-sm sm:text-base group-hover:text-orange-600 transition-colors duration-300">
-                  CI/CD & Git
-                </span>
-                <span className="text-sm sm:text-base font-semibold bg-orange-100 px-2 py-1 rounded-full group-hover:bg-orange-200 transition-colors duration-300">
-                  70%
-                </span>
-              </div>
-              <Progress
-                value={70}
-                className="h-3 group-hover:h-4 transition-all duration-300"
-              />
-            </div>
 
             <div className="group space-y-2 p-4 rounded-xl bg-white/70 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:bg-white/90 hover:scale-[1.02]">
               <div className="flex justify-between items-center">
@@ -246,11 +230,11 @@ const HomePage = () => {
                   Dashboards (Power BI, Grafana, SCOM)
                 </span>
                 <span className="text-sm sm:text-base font-semibold bg-indigo-100 px-2 py-1 rounded-full group-hover:bg-indigo-200 transition-colors duration-300">
-                  60%
+                  70%
                 </span>
               </div>
               <Progress
-                value={60}
+                value={70}
                 className="h-3 group-hover:h-4 transition-all duration-300"
               />
             </div>
@@ -511,7 +495,7 @@ const HomePage = () => {
                   </h3>
                 </div>
                 <p className="text-gray-600 mb-2 text-sm sm:text-base font-medium">
-                  Crew Member
+                  Crew Member (Part-time)
                 </p>
                 <p className="text-gray-500 text-xs sm:text-sm bg-gray-50 px-3 py-1 rounded-full inline-block">
                   Eindhoven | Dec 2022 – Sept 2023
