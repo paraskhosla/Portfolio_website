@@ -370,7 +370,7 @@ const HomePage = () => {
                   </h3>
                 </div>
                 <p className="text-gray-600 mb-2 text-sm sm:text-base font-medium">
-                  Machine learning & Embedded Software Engineer
+                  Machine learning & Embedded Engineer
                 </p>
                 <p className="text-gray-500 text-xs sm:text-sm bg-gray-50 px-3 py-1 rounded-full inline-block">
                   Drachten | Sept 2023 – Jan 2024
