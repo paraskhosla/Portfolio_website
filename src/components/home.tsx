@@ -37,7 +37,7 @@ const HomePage = () => {
 
     const intervalId = setInterval(() => {
       carouselApi.scrollNext();
-    }, 3000);
+    }, 2600);
 
     return () => clearInterval(intervalId);
   }, [carouselApi]);
