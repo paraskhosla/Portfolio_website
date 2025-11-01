@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Navbar from "./Navbar";
 import HeroSection from "./HeroSection";
 import ProjectsSection from "./ProjectsSection";
@@ -8,10 +8,17 @@ import Chatbot from "./Chatbot";
 import { Progress } from "./ui/progress";
 import { Separator } from "./ui/separator";
 import { ArrowUp, Briefcase, GraduationCap } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  type CarouselApi,
+} from "./ui/carousel";
 
 const HomePage = () => {
   const [showScrollToTop, setShowScrollToTop] = useState(false);
   const [showAllSkills, setShowAllSkills] = useState(false);
+  const [carouselApi, setCarouselApi] = useState<CarouselApi>();
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -23,6 +30,17 @@ const HomePage = () => {
       });
     }
   };
+
+  // Auto-play carousel effect
+  useEffect(() => {
+    if (!carouselApi) return;
+
+    const intervalId = setInterval(() => {
+      carouselApi.scrollNext();
+    }, 3000);
+
+    return () => clearInterval(intervalId);
+  }, [carouselApi]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -136,11 +154,42 @@ const HomePage = () => {
           </div>
 
           <div className="md:w-1/2 mt-6 md:mt-0">
-            <img
-              src="https://res.cloudinary.com/djraxo05u/image/upload/v1752008523/profile_jwxz4v.jpg"
-              alt="Software Developer workspace"
-              className="rounded-lg w-full h-auto object-cover shadow-lg hover:shadow-[0_0_35px_rgba(80,80,80,0.6)] transition-shadow duration-500"
-            />
+            <Carousel 
+              className="w-full" 
+              opts={{ loop: true }}
+              setApi={setCarouselApi}
+            >
+              <CarouselContent>
+                <CarouselItem>
+                  <img
+                    src="https://res.cloudinary.com/djraxo05u/image/upload/v1752008523/profile_jwxz4v.jpg"
+                    alt="Professional workspace"
+                    className="rounded-lg w-full h-auto object-cover shadow-lg hover:shadow-[0_0_35px_rgba(80,80,80,0.6)] transition-shadow duration-500"
+                  />
+                </CarouselItem>
+                <CarouselItem>
+                  <img
+                    src="https://res.cloudinary.com/djraxo05u/image/upload/v1762007862/daf_truck_vslda4.jpg"
+                    alt="Software Developer workspace"
+                    className="rounded-lg w-full h-auto object-cover shadow-lg hover:shadow-[0_0_35px_rgba(80,80,80,0.6)] transition-shadow duration-500"
+                  />
+                </CarouselItem>
+                <CarouselItem>
+                  <img
+                    src="https://res.cloudinary.com/djraxo05u/image/upload/v1762008723/Fun_t7t0pt.jpg"
+                    alt="Fun"
+                    className="rounded-lg w-full h-auto object-cover shadow-lg hover:shadow-[0_0_35px_rgba(80,80,80,0.6)] transition-shadow duration-500"
+                  />
+                </CarouselItem>
+                <CarouselItem>
+                  <img
+                    src="https://res.cloudinary.com/djraxo05u/image/upload/v1762008272/Graduate_xhne0o.jpg"
+                    alt="Graduating ceremony"
+                    className="rounded-lg w-full h-auto object-cover shadow-lg hover:shadow-[0_0_35px_rgba(80,80,80,0.6)] transition-shadow duration-500"
+                  />
+                </CarouselItem>
+              </CarouselContent>
+            </Carousel>
           </div>
         </div>
       </section>
