@@ -89,6 +89,12 @@ const HomePage = () => {
                 Information & Communication Technology(2025)
               </p>
             </div>
+            <div className="flex items-center gap-2 mb-2">
+              <GraduationCap className="h-4 w-4 sm:h-5 sm:w-5 text-gray-600 flex-shrink-0" />
+              <p className="text-gray-700 text-sm sm:text-base">
+                Minor: Digital Experience Design (2024)
+              </p>
+            </div>
             <div className="flex items-center gap-2 mb-4 sm:mb-6">
               <GraduationCap className="h-4 w-4 sm:h-5 sm:w-5 text-gray-600 flex-shrink-0" />
               <p className="text-gray-700 text-sm sm:text-base">
@@ -480,11 +486,11 @@ const HomePage = () => {
                     <Briefcase className="h-4 w-4 sm:h-5 sm:w-5 text-purple-600 flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
                   </div>
                   <h3 className="font-bold text-lg sm:text-xl leading-tight group-hover:text-purple-600 transition-colors duration-300">
-                    Color Change Detection – Robot Lab IoT
+                    Fontys University – Robot Lab IoT
                   </h3>
                 </div>
                 <p className="text-gray-600 mb-2 text-sm sm:text-base font-medium">
-                  Embedded & Computer Vision Engineer
+                  Embedded & Vision Engineer
                 </p>
                 <p className="text-gray-500 text-xs sm:text-sm bg-gray-50 px-3 py-1 rounded-full inline-block">
                   Eindhoven | Feb 2023 – June 2023
