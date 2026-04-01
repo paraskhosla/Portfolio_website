@@ -2,19 +2,17 @@ import React, { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
-import { Mail, MapPin, Instagram, Linkedin } from "lucide-react";
+import { Mail, MapPin, Linkedin } from "lucide-react";
 import emailjs from "@emailjs/browser";
 
 interface ContactSectionProps {
   email?: string;
-  instagram?: string;
   linkedin?: string;
   location?: string;
 }
 
 const ContactSection = ({
   email = "prskhsl@gmail.com",
-  instagram = "https://www.instagram.com/khoslaparas_k.p/",
   linkedin = "https://www.linkedin.com/in/paraskhosla/",
   location = "Eindhoven, Netherlands",
 }: ContactSectionProps) => {
@@ -305,24 +303,6 @@ const ContactSection = ({
                       className="font-medium hover:text-primary transition-colors duration-300 text-sm sm:text-base break-all"
                     >
                       {email}
-                    </a>
-                  </div>
-                </div>
-                <div className="flex items-center space-x-3 sm:space-x-4 p-2 sm:p-3 rounded-lg transition-all duration-300 hover:bg-primary/5 hover:shadow-lg hover:shadow-primary/20 cursor-pointer group">
-                  <div className="bg-primary/10 p-2 sm:p-3 rounded-full transition-all duration-300 group-hover:bg-primary/20 group-hover:shadow-lg group-hover:shadow-primary/30 group-hover:scale-110 flex-shrink-0">
-                    <Instagram className="h-4 w-4 sm:h-5 sm:w-5 text-primary transition-all duration-300 group-hover:scale-110" />
-                  </div>
-                  <div className="min-w-0 flex-1">
-                    <p className="text-xs sm:text-sm text-muted-foreground transition-colors duration-300 group-hover:text-primary/70">
-                      Instagram
-                    </p>
-                    <a
-                      href={instagram}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="font-medium hover:text-primary transition-colors duration-300 text-sm sm:text-base"
-                    >
-                      @khoslaparas_k.p
                     </a>
                   </div>
                 </div>

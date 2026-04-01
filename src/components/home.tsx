@@ -721,7 +721,7 @@ const HomePage = () => {
                   <circle cx="4" cy="4" r="2" />
                 </svg>
               </a>
-              <a
+              {/* <a
                 href="https://instagram.com/khoslaparas_k.p/"
                 target="https://www.instagram.com/khoslaparas_k.p/"
                 rel="noopener noreferrer"
@@ -743,7 +743,7 @@ const HomePage = () => {
                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
                   <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
                 </svg>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
