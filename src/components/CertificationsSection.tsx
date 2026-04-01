@@ -216,7 +216,7 @@ const defaultCertifications: Certification[] = [
     issuer: "Platform Engineering",
     date: "2025",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png",
+      "https://res.cloudinary.com/djraxo05u/image/upload/v1775074167/platform_engineering_cyvg5j.png",
     credentialUrl:
       "https://www.virtualbadge.io/certificate-validator?credential=d8359d91-2d26-44ff-b658-583614df0cc4",
     skills: ["Internal Developer Platforms", "CI/CD Integration", "DevOps Practices"],
@@ -227,7 +227,7 @@ const defaultCertifications: Certification[] = [
     issuer: "LinkedIn",
     date: "2025",
     image:
-      "https://images.credly.com/size/340x340/images/4136ced8-75d5-4afb-8677-40b6236e2672/azure-ai-fundamentals-600x600.png",
+      "https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png",
     credentialUrl:
       "https://www.linkedin.com/learning/certificates/cd415dda309a1f8a8683f3ce076fbddbdfe804ed5c358b355f9c3069eec40d50?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bbxgy0om8RH60m24P1%2BEx8A%3D%3D",
     skills: ["Infrastructure as Code (IaC)", "Azure Resource Provisioning", "Terraform"],
@@ -238,7 +238,7 @@ const defaultCertifications: Certification[] = [
     issuer: "LinkedIn",
     date: "2025",
     image:
-      "https://images.credly.com/size/340x340/images/70eb1e3f-d4de-4377-a062-b20fb29594ea/azure-data-fundamentals-600x600.png",
+      "https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png",
     credentialUrl:
       "https://www.linkedin.com/learning/certificates/4a34ff8ddc344d6910118d3ad3a9b01d384f8ee5cac83414c0a49f8222351f0d?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bbxgy0om8RH60m24P1%2BEx8A%3D%3D",
     skills: ["Azure Services Management", "Identity & Access (IAM)", "Resource Monitoring"]
@@ -250,7 +250,7 @@ const defaultCertifications: Certification[] = [
     issuer: "LinkedIn",
     date: "2025",
     image:
-      "https://images.credly.com/size/340x340/images/70eb1e3f-d4de-4377-a062-b20fb29594ea/azure-data-fundamentals-600x600.png",
+      "https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png",
     credentialUrl:
       "https://www.linkedin.com/learning/certificates/83663a3654132860e02236722534e918f2b229d03b0964d7e452e0fd6f191644?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bbxgy0om8RH60m24P1%2BEx8A%3D%3D",
     skills: ["Windows Server Administration", "Active Directory Basics", "System Configuration"]
@@ -262,7 +262,7 @@ const defaultCertifications: Certification[] = [
     issuer: "LinkedIn",
     date: "2025",
     image:
-      "https://images.credly.com/size/340x340/images/70eb1e3f-d4de-4377-a062-b20fb29594ea/azure-data-fundamentals-600x600.png",
+      "https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png",
     credentialUrl:
       "https://learn.microsoft.com/en-us/users/paras-5519/achievements/9y94knxu",
     skills: ["Task Automation", "Scripting & Functions", "System Management"]
@@ -274,7 +274,7 @@ const defaultCertifications: Certification[] = [
     issuer: "LinkedIn",
     date: "2025",
     image:
-      "https://images.credly.com/size/340x340/images/70eb1e3f-d4de-4377-a062-b20fb29594ea/azure-data-fundamentals-600x600.png",
+      "https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png",
     credentialUrl:
       "https://www.linkedin.com/learning/certificates/5056f7bc729d3e3f41849e5adb54b9ac2251b35cdded2e40f4f8abe18527ae70?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bbxgy0om8RH60m24P1%2BEx8A%3D%3D",
     skills: ["IP Addressing", "Network Fundamentals", "Cloud Networking Basics"]
@@ -286,7 +286,7 @@ const defaultCertifications: Certification[] = [
     issuer: "LinkedIn",
     date: "2025",
     image:
-      "https://images.credly.com/size/340x340/images/70eb1e3f-d4de-4377-a062-b20fb29594ea/azure-data-fundamentals-600x600.png",
+      "https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png",
     credentialUrl:
       "https://www.linkedin.com/learning/certificates/716eda185689ef1713f0f50ea414a1071d184ccaae36c40f160a6dd859b8e6c8?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bbxgy0om8RH60m24P1%2BEx8A%3D%3D",
     skills: [
