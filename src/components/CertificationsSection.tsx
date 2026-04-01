@@ -43,12 +43,11 @@ const CertificationsSection: React.FC<CertificationsSectionProps> = ({
           className="text-center mb-10 sm:mb-12 md:mb-16"
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 bg-gradient-to-r from-blue-800 to-indigo-600 bg-clip-text text-transparent">
-            Professional Certifications
+            Courses & Certifications
           </h2>
           <div className="w-16 sm:w-20 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto mb-4 sm:mb-6"></div>
           <p className="text-gray-700 max-w-2xl mx-auto text-sm sm:text-base px-4">
-            Validated expertise in cloud technologies, development practices,
-            and industry standards
+            Focused on Azure cloud, infrastructure as code, automation, and platform engineering practices.
           </p>
         </motion.div>
 
