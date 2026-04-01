@@ -187,7 +187,7 @@ const CertificationsSection: React.FC<CertificationsSectionProps> = ({
             </div>
             <div className="bg-white/60 backdrop-blur-sm rounded-lg p-4 shadow-md hover:shadow-lg transition-all duration-300">
               <div className="text-2xl sm:text-3xl font-bold text-indigo-600 mb-1">
-                2
+                3
               </div>
               <div className="text-xs sm:text-sm text-gray-600">Providers</div>
             </div>
@@ -213,85 +213,85 @@ const CertificationsSection: React.FC<CertificationsSectionProps> = ({
 const defaultCertifications: Certification[] = [
   {
     id: "1",
-    title: "AZ-104: Prerequisites for Azure administrators",
-    issuer: "Microsoft",
+    title: "Introduction to Platform Engineering",
+    issuer: "Platform Engineering",
     date: "2025",
     image:
       "https://images.credly.com/size/340x340/images/be8fcaeb-c769-4858-b567-ffaaa73ce8cf/image.png",
     credentialUrl:
-      "https://learn.microsoft.com/en-us/users/paras-5519/achievements/d9vf9rnj?ref=https%3A%2F%2Fwww.linkedin.com%2F",
-    skills: ["Azure Administration", "Virtual Machines", "Identity Management"],
+      "https://www.virtualbadge.io/certificate-validator?credential=d8359d91-2d26-44ff-b658-583614df0cc4",
+    skills: ["Internal Developer Platforms", "CI/CD Integration", "DevOps Practices"],
   },
   {
     id: "2",
-    title: "AZ-900: Azure management and governance",
-    issuer: "Microsoft",
+    title: "Introduction to Terraform on Azure",
+    issuer: "LinkedIn",
     date: "2025",
     image:
       "https://images.credly.com/size/340x340/images/4136ced8-75d5-4afb-8677-40b6236e2672/azure-ai-fundamentals-600x600.png",
     credentialUrl:
-      "https://learn.microsoft.com/api/achievements/share/en-us/Paras-5519/CXDXBQU9?sharingId=643E3676904F0C54",
-    skills: ["Cloud Concepts", "Azure Pricing", "Governance"],
+      "https://www.linkedin.com/learning/certificates/cd415dda309a1f8a8683f3ce076fbddbdfe804ed5c358b355f9c3069eec40d50?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bbxgy0om8RH60m24P1%2BEx8A%3D%3D",
+    skills: ["Infrastructure as Code (IaC)", "Azure Resource Provisioning", "Terraform"],
   },
   {
     id: "3",
-    title: "AZ-500: Secure compute, storage, and databases",
-    issuer: "Microsoft",
+    title: "Azure Administration Essential Training",
+    issuer: "LinkedIn",
     date: "2025",
     image:
       "https://images.credly.com/size/340x340/images/70eb1e3f-d4de-4377-a062-b20fb29594ea/azure-data-fundamentals-600x600.png",
     credentialUrl:
-      "https://learn.microsoft.com/api/achievements/share/en-us/Paras-5519/JU47YJDT?sharingId=643E3676904F0C54",
-    skills: ["Identity & Access Management", "Network Security", "Monitoring"]
+      "https://www.linkedin.com/learning/certificates/4a34ff8ddc344d6910118d3ad3a9b01d384f8ee5cac83414c0a49f8222351f0d?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bbxgy0om8RH60m24P1%2BEx8A%3D%3D",
+    skills: ["Azure Services Management", "Identity & Access (IAM)", "Resource Monitoring"]
 ,
   },
   {
     id: "4",
-    title: "AZ-400: Implement CI with Azure Pipelines and GitHub Actions",
-    issuer: "Microsoft",
+    title: "Windows Server 2022 Essential Training",
+    issuer: "LinkedIn",
     date: "2025",
     image:
       "https://images.credly.com/size/340x340/images/70eb1e3f-d4de-4377-a062-b20fb29594ea/azure-data-fundamentals-600x600.png",
     credentialUrl:
-      "https://learn.microsoft.com/en-us/users/paras-5519/achievements/3a3d8uah",
-    skills: ["CI/CD", "GitHub", "Pipelines"]
+      "https://www.linkedin.com/learning/certificates/83663a3654132860e02236722534e918f2b229d03b0964d7e452e0fd6f191644?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bbxgy0om8RH60m24P1%2BEx8A%3D%3D",
+    skills: ["Windows Server Administration", "Active Directory Basics", "System Configuration"]
 ,
   },
   {
     id: "5",
-    title: "AZ-700 Design and Implement Microsoft Azure Network Solutions",
-    issuer: "Microsoft",
+    title: "PowerShell 7 Essential Training",
+    issuer: "LinkedIn",
     date: "2025",
     image:
       "https://images.credly.com/size/340x340/images/70eb1e3f-d4de-4377-a062-b20fb29594ea/azure-data-fundamentals-600x600.png",
     credentialUrl:
       "https://learn.microsoft.com/en-us/users/paras-5519/achievements/9y94knxu",
-    skills: ["Networking", "VPN", "Firewalls"]
+    skills: ["Task Automation", "Scripting & Functions", "System Management"]
 ,
   },
   {
     id: "6",
-    title: "Introduction to Kubernetes on Azure",
-    issuer: "Microsoft",
+    title: "Networking Foundations: IP Addressing",
+    issuer: "LinkedIn",
     date: "2025",
     image:
       "https://images.credly.com/size/340x340/images/70eb1e3f-d4de-4377-a062-b20fb29594ea/azure-data-fundamentals-600x600.png",
     credentialUrl:
-      "https://learn.microsoft.com/en-us/users/paras-5519/achievements/h7h9bg78",
-    skills: ["Kubernetes", "AKS", "Containers"]
+      "https://www.linkedin.com/learning/certificates/5056f7bc729d3e3f41849e5adb54b9ac2251b35cdded2e40f4f8abe18527ae70?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bbxgy0om8RH60m24P1%2BEx8A%3D%3D",
+    skills: ["IP Addressing", "Network Fundamentals", "Cloud Networking Basics"]
 ,
   },
   {
     id: "7",
-    title: "Introduction to generative AI concepts",
-    issuer: "Microsoft",
+    title: "Scrum: The Basics",
+    issuer: "LinkedIn",
     date: "2025",
     image:
       "https://images.credly.com/size/340x340/images/70eb1e3f-d4de-4377-a062-b20fb29594ea/azure-data-fundamentals-600x600.png",
     credentialUrl:
-      "https://learn.microsoft.com/en-us/users/paras-5519/achievements/8z8sp4gw",
+      "https://www.linkedin.com/learning/certificates/716eda185689ef1713f0f50ea414a1071d184ccaae36c40f160a6dd859b8e6c8?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bbxgy0om8RH60m24P1%2BEx8A%3D%3D",
     skills: [
-      "GenAI", "Prompting", "AI Ethics",
+      "Agile Methodology", "Scrum Framework", "Team Collaboration",
     ],
   },
   {
