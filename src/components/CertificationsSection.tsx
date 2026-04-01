@@ -216,7 +216,7 @@ const defaultCertifications: Certification[] = [
     issuer: "Platform Engineering",
     date: "2025",
     image:
-      "https://images.credly.com/size/340x340/images/be8fcaeb-c769-4858-b567-ffaaa73ce8cf/image.png",
+      "https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png",
     credentialUrl:
       "https://www.virtualbadge.io/certificate-validator?credential=d8359d91-2d26-44ff-b658-583614df0cc4",
     skills: ["Internal Developer Platforms", "CI/CD Integration", "DevOps Practices"],
