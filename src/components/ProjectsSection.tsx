@@ -98,7 +98,7 @@ const defaultProjects: Project[] = [
     image:
       "https://res.cloudinary.com/djraxo05u/image/upload/v1775485802/dashboard_i8ssld.png",
     tags: ["Kubernetes", "Grafana", "Docker"],
-    caseStudyUrl: "https://paraskhosla.github.io/cloud native project.pdf",
+    caseStudyUrl: "https://paraskhosla.github.io/Portfolio_website/cloud native project.pdf",
     demoUrl: "https://paraskhosla.github.io/Portfolio_website/Cloud-Native Monitoring System demo.pdf",
   },
   {
