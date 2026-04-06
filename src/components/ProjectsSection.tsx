@@ -92,7 +92,7 @@ const defaultProjects: Project[] = [
   },
   {
     id: "3",
-    title: "Cloud-Native Monitoring System (Kubernetes, Prometheus, Grafana)",
+    title: "Cloud-Native Monitoring System",
     description:
       "Built a cloud-native monitoring system using Kubernetes, Prometheus, and Grafana. Implemented metrics exposure, enabled Prometheus scraping, and created real-time dashboards for monitoring system performance.",
     image:
