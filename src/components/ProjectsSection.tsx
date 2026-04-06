@@ -92,14 +92,14 @@ const defaultProjects: Project[] = [
   },
   {
     id: "3",
-    title: "Azure & Node-RED Integration",
+    title: "Cloud-Native Monitoring System (Kubernetes, Prometheus, Grafana)",
     description:
-      "Connected IoT devices to Azure IoT Hub for real-time data monitoring using Azure dashboards. Linked Node-RED for message processing and visualization, enabling smooth IoT data flow within the Azure DevOps setup.",
+      "Built a cloud-native monitoring system using Kubernetes, Prometheus, and Grafana. Implemented metrics exposure, enabled Prometheus scraping, and created real-time dashboards for monitoring system performance.",
     image:
-      "https://res.cloudinary.com/djraxo05u/image/upload/v1759763171/azure_project__sssahr.png",
-    tags: ["Azure IoT Hub", "Node-RED", "Cloud Integration"],
-    caseStudyUrl: "https://paraskhosla.github.io/Portfolio_website/Challenge Azure.pdf",
-    demoUrl: "https://paraskhosla.github.io/Portfolio_website/Challenge Azure.pdf",
+      "https://res.cloudinary.com/djraxo05u/image/upload/v1775485802/dashboard_i8ssld.png",
+    tags: ["Kubernetes", "Grafana", "Docker"],
+    caseStudyUrl: "https://paraskhosla.github.io/cloud native project.pdf",
+    demoUrl: "https://paraskhosla.github.io/Portfolio_website/Cloud-Native Monitoring System demo.pdf",
   },
   {
     id: "4",
