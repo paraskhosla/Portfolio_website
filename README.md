@@ -8,41 +8,41 @@ Live Demo: https://paraskhosla.github.io/Portfolio_website/
 
 This portfolio is designed to present my technical projects and experience in a clear, structured way. It focuses on real-world engineering work, including cloud pipelines, monitoring systems, and backend development.
 
-## Some highlighted areas:
+## Key Areas
 
--Cloud & DevOps (Azure, CI/CD pipelines)
+- Cloud & DevOps (Azure, CI/CD pipelines)
 
--Observability (Prometheus, Grafana, Application Insights)
+- Observability (Prometheus, Grafana, Application Insights)
 
--Backend Development (.NET, Python APIs)
+- Backend Development (.NET, Python APIs)
 
--Data Visualization (Power BI dashboards)
+- Data Visualization (Power BI dashboards)
 
--Embedded Systems & IoT
+- Embedded Systems & IoT
 
 ## Tech Stack
 
--Frontend: React + TypeScript
+- Frontend: React + TypeScript
 
--Build Tool: Vite
+- Build Tool: Vite
 
--Styling: (Tailwind CSS / CSS / SCSS — update this)
+- Styling: (Tailwind CSS / CSS / SCSS — update this)
 
--Linting: ESLint
+- Linting: ESLint
 
--Version Control: Git & GitHub
+- Version Control: Git & GitHub
 
 ## Features
 
--Responsive and clean UI
+- Responsive and clean UI
 
--Dedicated project showcase section
+- Dedicated project showcase section
 
--Structured skills and experience overview
+- Structured skills and experience overview
 
--Fast performance with Vite
+- Fast performance with Vite
 
--Easy to extend and maintain
+- Easy to extend and maintain
 
 ## Project Structure
 
@@ -74,21 +74,21 @@ portfolio-website/
 
 ## Getting Started
 
--Clone the repository
+- Clone the repository
 
 git clone https://github.com/your-username/portfolio-website.git
 
 cd portfolio-website
 
--Install dependencies
+- Install dependencies
 
 npm install
 
--Run locally
+- Run locally
 
 npm run dev
 
--Build for production
+- Build for production
 
 npm run build
 
