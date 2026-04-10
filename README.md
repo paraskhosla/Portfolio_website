@@ -1,34 +1,70 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+## Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio built to showcase my work in cloud engineering, DevOps, and software development.
 
-Currently, two official plugins are available:
+🔗 Live Demo: (add your deployed link here)
+📂 Repository: (this repo)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## About
 
-## Expanding the ESLint configuration
+This portfolio is designed to present my technical projects and experience in a clear, structured way. It focuses on real-world engineering work, including cloud pipelines, monitoring systems, and backend development.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Some highlighted areas:
 
-- Configure the top-level `parserOptions` property like this:
+-Cloud & DevOps (Azure, CI/CD pipelines)
+-Observability (Prometheus, Grafana, Application Insights)
+-Backend Development (.NET, Python APIs)
+-Data Visualization (Power BI dashboards)
+-Embedded Systems & IoT
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Tech Stack
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-=======
-# Portfolio_website
->>>>>>> 6964bea0a05454d43b5daa4bd27ec65dedbc9b46
+-Frontend: React + TypeScript
+-Build Tool: Vite
+-Styling: (Tailwind CSS / CSS / SCSS — update this)
+-Linting: ESLint
+-Version Control: Git & GitHub
+
+## Features
+
+-Responsive and clean UI
+-Dedicated project showcase section
+-Structured skills and experience overview
+-Fast performance with Vite
+-Easy to extend and maintain
+
+## Project Structure
+
+portfolio-website/
+├── public/                 # Static assets
+├── src/
+│   ├── components/        # Reusable UI components
+│   ├── lib/               # Utility functions / helpers
+│   ├── stories/           # Storybook components (if used)
+│   ├── types/             # TypeScript type definitions
+│   ├── App.tsx            # Main app component
+│   ├── main.tsx           # Entry point
+│   ├── index.css          # Global styles
+│   └── vite-env.d.ts      # Vite type definitions
+├── .gitignore
+├── README.md
+
+## Getting Started
+
+-Clone the repository
+git clone https://github.com/your-username/portfolio-website.git
+cd portfolio-website
+
+-Install dependencies
+npm install
+
+-Run locally
+npm run dev
+
+-Build for production
+npm run build
+
+## Contact
+
+LinkedIn: https://www.linkedin.com/in/paraskhosla/
+Email: Prskhsl@gmail.com
