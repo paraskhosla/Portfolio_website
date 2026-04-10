@@ -12,25 +12,37 @@ This portfolio is designed to present my technical projects and experience in a 
 ## Some highlighted areas:
 
 -Cloud & DevOps (Azure, CI/CD pipelines)
+
 -Observability (Prometheus, Grafana, Application Insights)
+
 -Backend Development (.NET, Python APIs)
+
 -Data Visualization (Power BI dashboards)
+
 -Embedded Systems & IoT
 
 ## Tech Stack
 
 -Frontend: React + TypeScript
+
 -Build Tool: Vite
+
 -Styling: (Tailwind CSS / CSS / SCSS — update this)
+
 -Linting: ESLint
+
 -Version Control: Git & GitHub
 
 ## Features
 
 -Responsive and clean UI
+
 -Dedicated project showcase section
+
 -Structured skills and experience overview
+
 -Fast performance with Vite
+
 -Easy to extend and maintain
 
 ## Project Structure
@@ -53,18 +65,23 @@ portfolio-website/
 
 -Clone the repository
 git clone https://github.com/your-username/portfolio-website.git
+
 cd portfolio-website
 
 -Install dependencies
+
 npm install
 
 -Run locally
+
 npm run dev
 
 -Build for production
+
 npm run build
 
 ## Contact
 
 LinkedIn: https://www.linkedin.com/in/paraskhosla/
+
 Email: Prskhsl@gmail.com
