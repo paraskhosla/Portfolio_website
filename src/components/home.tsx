@@ -221,12 +221,9 @@ const HomePage = () => {
                 <span className="font-medium text-sm sm:text-base group-hover:text-blue-600 transition-colors duration-300">
                   Cloud & Azure (Functions, Storage, KeyVault, App Insights)
                 </span>
-                <span className="text-sm sm:text-base font-semibold bg-blue-100 px-2 py-1 rounded-full group-hover:bg-blue-200 transition-colors duration-300">
-                  80%
-                </span>
               </div>
               <Progress
-                value={80}
+                value={100}
                 className="h-3 group-hover:h-4 transition-all duration-300"
               />
             </div>
@@ -236,12 +233,9 @@ const HomePage = () => {
                 <span className="font-medium text-sm sm:text-base group-hover:text-green-600 transition-colors duration-300">
                   Automation (Azure DevOps)
                 </span>
-                <span className="text-sm sm:text-base font-semibold bg-green-100 px-2 py-1 rounded-full group-hover:bg-green-200 transition-colors duration-300">
-                  70%
-                </span>
               </div>
               <Progress
-                value={70}
+                value={90}
                 className="h-3 group-hover:h-4 transition-all duration-300"
               />
             </div>
@@ -251,12 +245,9 @@ const HomePage = () => {
                 <span className="font-medium text-sm sm:text-base group-hover:text-purple-600 transition-colors duration-300">
                   CI/CD & Git
                 </span>
-                <span className="text-sm sm:text-base font-semibold bg-purple-100 px-2 py-1 rounded-full group-hover:bg-purple-200 transition-colors duration-300">
-                  70%
-                </span>
               </div>
               <Progress
-                value={70}
+                value={80}
                 className="h-3 group-hover:h-4 transition-all duration-300"
               />
             </div>
@@ -269,14 +260,11 @@ const HomePage = () => {
                     <span className="font-medium text-sm sm:text-base group-hover:text-orange-600 transition-colors duration-300 text-foreground">
                       Embedded Systems (STM32, Microcontrollers)
                     </span>
-                    <span className="text-sm sm:text-base font-semibold bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 px-2 py-1 rounded-full group-hover:bg-orange-200 dark:group-hover:bg-orange-900/50 transition-colors duration-300">
-                      80%
-                    </span>
                   </div>
                   <Progress
-                    value={80}
+                    value={70}
                     className="h-3 group-hover:h-4 transition-all duration-300"
-                  />
+                  /> 
               </div>
 
             <div className="group space-y-2 p-4 rounded-xl bg-white/70 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:bg-white/90 hover:scale-[1.02]">
@@ -284,12 +272,9 @@ const HomePage = () => {
                 <span className="font-medium text-sm sm:text-base group-hover:text-indigo-600 transition-colors duration-300">
                   Dashboards (Power BI, Grafana, SCOM)
                 </span>
-                <span className="text-sm sm:text-base font-semibold bg-indigo-100 px-2 py-1 rounded-full group-hover:bg-indigo-200 transition-colors duration-300">
-                  70%
-                </span>
               </div>
               <Progress
-                value={70}
+                value={60}
                 className="h-3 group-hover:h-4 transition-all duration-300"
               />
             </div>
@@ -297,14 +282,11 @@ const HomePage = () => {
             <div className="group space-y-2 p-4 rounded-xl bg-white/70 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:bg-white/90 hover:scale-[1.02]">
               <div className="flex justify-between items-center">
                 <span className="font-medium text-sm sm:text-base group-hover:text-teal-600 transition-colors duration-300">
-                  Test Automation (Postman, Tosca)
-                </span>
-                <span className="text-sm sm:text-base font-semibold bg-teal-100 px-2 py-1 rounded-full group-hover:bg-teal-200 transition-colors duration-300">
-                  60%
+                  Test Automation (Tosca)
                 </span>
               </div>
               <Progress
-                value={60}
+                value={50}
                 className="h-3 group-hover:h-4 transition-all duration-300"
               />
             </div>
@@ -363,10 +345,10 @@ const HomePage = () => {
                   </h3>
                 </div>
                 <p className="text-gray-600 mb-2 text-sm sm:text-base font-medium">
-                  Cloud Integration & Dashboard Engineer
+                  System & Integration Engineer
                 </p>
                 <p className="text-gray-500 text-xs sm:text-sm bg-gray-50 px-3 py-1 rounded-full inline-block">
-                  Eindhoven | Feb 2025 – Jun 2025
+                  Eindhoven | Feb 2025 – Jul 2025
                 </p>
               </div>
 
@@ -428,7 +410,7 @@ const HomePage = () => {
                   Machine learning & Embedded Engineer
                 </p>
                 <p className="text-gray-500 text-xs sm:text-sm bg-gray-50 px-3 py-1 rounded-full inline-block">
-                  Drachten | Sept 2023 – Jan 2024
+                  Drachten | Sept 2023 – Feb 2024
                 </p>
               </div>
 
@@ -486,14 +468,14 @@ const HomePage = () => {
                     <Briefcase className="h-4 w-4 sm:h-5 sm:w-5 text-purple-600 flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
                   </div>
                   <h3 className="font-bold text-lg sm:text-xl leading-tight group-hover:text-purple-600 transition-colors duration-300">
-                    Fontys University – Robot Lab IoT
+                    Robot Lab IoT
                   </h3>
                 </div>
                 <p className="text-gray-600 mb-2 text-sm sm:text-base font-medium">
                   Embedded & Vision Engineer
                 </p>
                 <p className="text-gray-500 text-xs sm:text-sm bg-gray-50 px-3 py-1 rounded-full inline-block">
-                  Eindhoven | Feb 2023 – June 2023
+                  Eindhoven | Feb 2023 – Jun 2023
                 </p>
               </div>
 
