@@ -14,7 +14,7 @@ interface ContactSectionProps {
 const ContactSection = ({
   email = "prskhsl@gmail.com",
   linkedin = "https://www.linkedin.com/in/paraskhosla/",
-  location = "Eindhoven, Netherlands",
+  location = "Netherlands",
 }: ContactSectionProps) => {
   const [formData, setFormData] = useState({
     name: "",
