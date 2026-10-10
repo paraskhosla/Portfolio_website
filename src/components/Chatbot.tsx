@@ -98,6 +98,29 @@ const Chatbot = ({ isOpen = false }: ChatbotProps) => {
   const getBotResponse = (userMessage: string): string => {
     const message = userMessage.toLowerCase();
 
+    // Recommendations (checked first so "who" / "about" / "work" don't catch these questions)
+    if (
+      message.includes("recommend") ||
+      message.includes("reference") ||
+      message.includes("testimonial") ||
+      message.includes("feedback") ||
+      message.includes("colleague") ||
+      message.includes("mentor") ||
+      message.includes("manager") ||
+      message.includes("others say") ||
+      message.includes("people say") ||
+      message.includes("work with him") ||
+      message.includes("worked with him") ||
+      message.includes("working with him") ||
+      message.includes("what's he like") ||
+      message.includes("what is he like") ||
+      message.includes("eric") ||
+      message.includes("brijesh")
+    ) {
+      setTimeout(() => scrollToSection("recommendations"), 1000);
+      return "Paras has recommendations from two colleagues at DAF Trucks:\n• Eric Janssens, his company manager & mentor: \"I have experienced Paras as a very enthusiastic and eager to learn person.\"\n• Brijesh Rana, a cross-team colleague: \"Any organization would be lucky to have him.\"\n\nLet me show you the Recommendations section!";
+    }
+
     // Quick links responses
     if (
       message.includes("about") ||
@@ -207,7 +230,7 @@ const Chatbot = ({ isOpen = false }: ChatbotProps) => {
       message.includes("help") || 
       message.includes("what can you do")
     ) {
-      return "I can help you with:\n• Learn about Paras's background and experience\n• Navigate to different sections (About, Experience, Projects, etc.)\n• Get his contact information\n• Learn about his skills and certifications\n\nJust ask me anything about Paras or the website!";
+      return "I can help you with:\n• Learn about Paras's background and experience\n• Navigate to different sections (About, Experience, Projects, etc.)\n• Get his contact information\n• Learn about his skills and certifications\n• See what colleagues say about him\n\nJust ask me anything about Paras or the website!";
     }
 
     // Default response
