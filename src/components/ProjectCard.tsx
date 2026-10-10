@@ -3,6 +3,9 @@ import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { Card, CardContent, CardFooter } from "./ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./ui/dialog";
+import { Worker, Viewer, SpecialZoomLevel } from "@react-pdf-viewer/core";
+import "@react-pdf-viewer/core/lib/styles/index.css";
+import pdfWorkerUrl from "pdfjs-dist/build/pdf.worker.min.js?url";
 
 interface ProjectCardProps {
   image: string;
@@ -137,13 +140,6 @@ const ProjectCard = ({
                 </span>
               </div>
             )}
-            {showDesktopMessage && isMobile && (
-              <div className="mt-2">
-                <span className="text-sm text-gray-600">
-                  This document can be view on desktop!
-                </span>
-              </div>
-            )}
           </DialogHeader>
           <div className="relative flex-1 px-6 pb-6">
             {isPdfLoading && (
@@ -156,19 +152,24 @@ const ProjectCard = ({
                 </div>
               </div>
             )}
-            <iframe
-              src={`${currentPdfUrl}#toolbar=0&navpanes=0&scrollbar=1`}
-              className="w-full h-[calc(90vh-120px)] border-0 rounded-md bg-gray-100"
-              title={currentPdfTitle}
-              onLoad={() => setIsPdfLoading(false)}
-            // <iframe
-            //   src={`https://docs.google.com/viewer?embedded=true&url=${encodeURIComponent(currentPdfUrl)}`}
-            //   className="w-full h-[calc(90vh-120px)] border-0 rounded-md bg-gray-100"
-            //   title={currentPdfTitle}
-            //   onLoad={() => setIsPdfLoading(false)}
-            // /> 
-
-            />
+            {/* PDF viewer that works the same on desktop and mobile (all pages scroll) */}
+            <div
+              className="w-full h-[calc(90vh-120px)] rounded-md bg-gray-100 overflow-hidden"
+              onContextMenu={(e) => e.preventDefault()}
+            >
+              {currentPdfUrl && (
+                <Worker workerUrl={pdfWorkerUrl}>
+                  <Viewer
+                    fileUrl={currentPdfUrl}
+                    defaultScale={SpecialZoomLevel.PageWidth}
+                    transformGetDocumentParams={(options) =>
+                      Object.assign({}, options, { isEvalSupported: false })
+                    }
+                    onDocumentLoad={() => setIsPdfLoading(false)}
+                  />
+                </Worker>
+              )}
+            </div>
           </div>
         </DialogContent>
       </Dialog>
