@@ -4,6 +4,7 @@ import HeroSection from "./HeroSection";
 import ProjectsSection from "./ProjectsSection";
 import ContactSection from "./ContactSection";
 import CertificationsSection from "./CertificationsSection";
+import RecommendationsSection from "./RecommendationsSection";
 import Chatbot from "./Chatbot";
 import { Progress } from "./ui/progress";
 import { Separator } from "./ui/separator";
@@ -580,6 +581,9 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+
+      {/* Recommendations Section */}
+      <RecommendationsSection />
 
       {/* Certifications Section */}
       <div id="certifications">
