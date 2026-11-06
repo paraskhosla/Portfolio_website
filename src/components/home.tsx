@@ -6,15 +6,75 @@ import ContactSection from "./ContactSection";
 import CertificationsSection from "./CertificationsSection";
 import RecommendationsSection from "./RecommendationsSection";
 import Chatbot from "./Chatbot";
-import { Progress } from "./ui/progress";
 import { Separator } from "./ui/separator";
-import { ArrowUp, Briefcase, GraduationCap } from "lucide-react";
+import {
+  ArrowUp,
+  Briefcase,
+  GraduationCap,
+  Cloud,
+  Workflow,
+  GitBranch,
+  Cpu,
+  LayoutDashboard,
+  FlaskConical,
+} from "lucide-react";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   type CarouselApi,
 } from "./ui/carousel";
+
+const skillGroups = [
+  {
+    title: "Cloud & Azure",
+    tools: ["Azure Functions", "Storage", "Key Vault", "App Insights"],
+    Icon: Cloud,
+    iconBg: "bg-blue-50",
+    iconColor: "text-blue-600",
+    hoverText: "group-hover:text-blue-600",
+  },
+  {
+    title: "Automation",
+    tools: ["Azure DevOps"],
+    Icon: Workflow,
+    iconBg: "bg-green-50",
+    iconColor: "text-green-600",
+    hoverText: "group-hover:text-green-600",
+  },
+  {
+    title: "CI/CD & Git",
+    tools: ["CI/CD pipelines", "Git"],
+    Icon: GitBranch,
+    iconBg: "bg-purple-50",
+    iconColor: "text-purple-600",
+    hoverText: "group-hover:text-purple-600",
+  },
+  {
+    title: "Embedded Systems",
+    tools: ["STM32", "Microcontrollers"],
+    Icon: Cpu,
+    iconBg: "bg-orange-50",
+    iconColor: "text-orange-600",
+    hoverText: "group-hover:text-orange-600",
+  },
+  {
+    title: "Dashboards",
+    tools: ["Power BI", "Grafana", "SCOM"],
+    Icon: LayoutDashboard,
+    iconBg: "bg-indigo-50",
+    iconColor: "text-indigo-600",
+    hoverText: "group-hover:text-indigo-600",
+  },
+  {
+    title: "Test Automation",
+    tools: ["Tosca"],
+    Icon: FlaskConical,
+    iconBg: "bg-teal-50",
+    iconColor: "text-teal-600",
+    hoverText: "group-hover:text-teal-600",
+  },
+];
 
 const HomePage = () => {
   const [showScrollToTop, setShowScrollToTop] = useState(false);
@@ -106,9 +166,9 @@ const HomePage = () => {
             <p className="text-gray-700 mb-6 sm:mb-8 text-sm sm:text-base leading-relaxed">
               With experience in software development and embedded systems, I
               build solutions that are both efficient and impactful. I
-              specialize in Full-stack development, cloud integration, and
-              dashboards. From internships to personal projects, I turn complex
-              ideas into working systems.
+              specialize in cloud integration with Azure, monitoring dashboards
+              and CI/CD automation. From professional roles to personal projects,
+              I turn complex ideas into working systems.
             </p>
             {/* Skills grid */}
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
@@ -216,84 +276,35 @@ const HomePage = () => {
             Core Tools & Skills
           </h2>
 
-          <div className="max-w-3xl mx-auto space-y-6 sm:space-y-8">
-            <div className="group space-y-2 p-4 rounded-xl bg-white/70 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:bg-white/90 hover:scale-[1.02]">
-              <div className="flex justify-between items-center">
-                <span className="font-medium text-sm sm:text-base group-hover:text-blue-600 transition-colors duration-300">
-                  Cloud & Azure (Functions, Storage, KeyVault, App Insights)
-                </span>
-              </div>
-              <Progress
-                value={100}
-                className="h-3 group-hover:h-4 transition-all duration-300"
-              />
-            </div>
-
-            <div className="group space-y-2 p-4 rounded-xl bg-white/70 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:bg-white/90 hover:scale-[1.02]">
-              <div className="flex justify-between items-center">
-                <span className="font-medium text-sm sm:text-base group-hover:text-green-600 transition-colors duration-300">
-                  Automation (Azure DevOps)
-                </span>
-              </div>
-              <Progress
-                value={90}
-                className="h-3 group-hover:h-4 transition-all duration-300"
-              />
-            </div>
-
-            <div className="group space-y-2 p-4 rounded-xl bg-white/70 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:bg-white/90 hover:scale-[1.02]">
-              <div className="flex justify-between items-center">
-                <span className="font-medium text-sm sm:text-base group-hover:text-purple-600 transition-colors duration-300">
-                  CI/CD & Git
-                </span>
-              </div>
-              <Progress
-                value={80}
-                className="h-3 group-hover:h-4 transition-all duration-300"
-              />
-            </div>
-
-            {/* Hide other skills */}
-          {showAllSkills && (
-            <>
-              <div className="group space-y-2 p-4 rounded-xl bg-card/70 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:bg-card/90 hover:scale-[1.02] border border-border animate-in fade-in slide-in-from-top-4 duration-500">
-                  <div className="flex justify-between items-center">
-                    <span className="font-medium text-sm sm:text-base group-hover:text-orange-600 transition-colors duration-300 text-foreground">
-                      Embedded Systems (STM32, Microcontrollers)
-                    </span>
+          <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            {skillGroups
+              .filter((_, index) => showAllSkills || index < 3)
+              .map(({ title, tools, Icon, iconBg, iconColor, hoverText }, index) => (
+                <div
+                  key={title}
+                  className={`group p-5 sm:p-6 rounded-xl bg-white/80 backdrop-blur-sm border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ${
+                    index >= 3 ? "animate-in fade-in slide-in-from-top-4 duration-500" : ""
+                  }`}
+                >
+                  <div className={`w-11 h-11 rounded-lg flex items-center justify-center mb-4 ${iconBg}`}>
+                    <Icon className={`h-5 w-5 ${iconColor}`} />
                   </div>
-                  <Progress
-                    value={70}
-                    className="h-3 group-hover:h-4 transition-all duration-300"
-                  /> 
-              </div>
-
-            <div className="group space-y-2 p-4 rounded-xl bg-white/70 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:bg-white/90 hover:scale-[1.02]">
-              <div className="flex justify-between items-center">
-                <span className="font-medium text-sm sm:text-base group-hover:text-indigo-600 transition-colors duration-300">
-                  Dashboards (Power BI, Grafana, SCOM)
-                </span>
-              </div>
-              <Progress
-                value={60}
-                className="h-3 group-hover:h-4 transition-all duration-300"
-              />
-            </div>
-
-            <div className="group space-y-2 p-4 rounded-xl bg-white/70 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:bg-white/90 hover:scale-[1.02]">
-              <div className="flex justify-between items-center">
-                <span className="font-medium text-sm sm:text-base group-hover:text-teal-600 transition-colors duration-300">
-                  Test Automation (Tosca)
-                </span>
-              </div>
-              <Progress
-                value={50}
-                className="h-3 group-hover:h-4 transition-all duration-300"
-              />
-            </div>
-            </>
-          )}
-        </div>
+                  <h3 className={`font-semibold text-base sm:text-lg text-gray-900 mb-3 transition-colors duration-300 ${hoverText}`}>
+                    {title}
+                  </h3>
+                  <div className="flex flex-wrap gap-2">
+                    {tools.map((tool) => (
+                      <span
+                        key={tool}
+                        className="text-xs sm:text-sm px-2.5 py-1 rounded-md bg-gray-100 text-gray-700"
+                      >
+                        {tool}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+          </div>
 
           {/* View all skills button */}
           <div className="flex justify-center mt-8">
@@ -334,6 +345,71 @@ const HomePage = () => {
         </h2>
 
         <div className="max-w-4xl mx-auto space-y-8 sm:space-y-10 md:space-y-12">
+
+          <div className="group bg-white rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 hover:border-gray-200">
+            <div className="flex flex-col md:flex-row gap-4 sm:gap-6">
+              <div className="md:w-1/3">
+                <div className="flex items-start gap-2 mb-1">
+                  <div className="p-2 bg-yellow-50 rounded-lg group-hover:bg-yellow-100 transition-colors duration-300">
+                    <Briefcase className="h-4 w-4 sm:h-5 sm:w-5 text-yellow-600 flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
+                  </div>
+                  <h3 className="font-bold text-lg sm:text-xl leading-tight group-hover:text-yellow-600 transition-colors duration-300">
+                    Scorpius Technology Pvt. Ltd.
+                  </h3>
+                </div>
+                <p className="text-gray-600 mb-2 text-sm sm:text-base font-medium">
+                  Cloud Engineer
+                </p>
+                <p className="text-gray-500 text-xs sm:text-sm bg-gray-50 px-3 py-1 rounded-full inline-block">
+                  Remote, Part-time | Oct 2025 – Aug 2026
+                </p>
+              </div>
+
+              <div className="md:w-2/3 mt-4 md:mt-0">
+                <ul className="space-y-3 text-gray-700 text-sm sm:text-base">
+                  <li className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                    <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>
+                      Developed Azure Functions and used Azure Blob Storage to 
+                      support automation and data processing workflows
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                    <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>
+                      Configured Azure DevOps CI/CD pipelines for application builds and deployments
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                    <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>
+                      Built Grafana dashboards to monitor website traffic 
+                      and performance using the team's existing monitoring infrastructure
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                    <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>
+                      Documented Azure configurations, 
+                      deployment procedures and troubleshooting steps to support system maintenance
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                    <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>
+                      Supported team collaboration and knowledge sharing 
+                      by maintaining clear technical documentation for future reference
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="relative">
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-px h-8 bg-gradient-to-b from-gray-300 to-transparent"></div>
+          </div>
+
           <div className="group bg-white rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 hover:border-gray-200">
             <div className="flex flex-col md:flex-row gap-4 sm:gap-6">
               <div className="md:w-1/3">
@@ -378,7 +454,7 @@ const HomePage = () => {
                   </li>
                   <li className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors duration-200">
                     <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Automated API tests using Tosca and Postman</span>
+                    <span>Extended the DAF Tosca API test suite by building new test cases based on existing Postman collections</span>
                   </li>
                   <li className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors duration-200">
                     <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
